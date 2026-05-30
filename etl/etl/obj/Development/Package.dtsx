@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="193"
-  DTS:VersionGUID="{FEB0EF03-2B16-4A23-8676-03972988EA82}">
+  DTS:VersionBuild="217"
+  DTS:VersionGUID="{EC728C2C-80FD-483C-B82D-54A26FA82357}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -182,7 +182,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Brands"
-              DTS:DTSID="{6E9E261A-A95C-4022-9C9C-1695159DBB79}"
+              DTS:DTSID="{B364A5E7-9CD3-4127-BB72-A4B284A4E5B7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -191,7 +191,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Models"
-              DTS:DTSID="{3AA6D8DE-DA6C-425F-A1A6-C5C623B657EC}"
+              DTS:DTSID="{9BF45EA1-82CD-4775-8E0F-CD3778E8AAB9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -200,7 +200,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Colors"
-              DTS:DTSID="{2D5D3D7C-082E-4020-99D1-7C6DA2B0BD89}"
+              DTS:DTSID="{EAF02248-F6AB-40C3-8844-5A058C426401}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -209,7 +209,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Memory"
-              DTS:DTSID="{450EF9FF-C2B9-401D-B315-14206D9267E9}"
+              DTS:DTSID="{205662F6-6CB8-483C-8187-5C8E3598A92A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -218,7 +218,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Storage"
-              DTS:DTSID="{6E5FBD7D-247B-445C-985E-DEA50671FAAD}"
+              DTS:DTSID="{1940F8A5-7901-41CD-81A6-F9A1B19EC670}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -227,7 +227,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Camera"
-              DTS:DTSID="{EF61CC45-572B-4B0F-8046-F5AB198333F5}"
+              DTS:DTSID="{A420DABC-AF31-4048-A3C3-50D684FE845B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -236,7 +236,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Rating"
-              DTS:DTSID="{F89FF380-804B-4BFE-86F1-1AEC5755C466}"
+              DTS:DTSID="{36749073-0A46-4A9B-B9DE-94C04BC03D19}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -245,7 +245,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Selling Price"
-              DTS:DTSID="{4C65DACF-5C88-40EA-83C3-5C725B14F6B9}"
+              DTS:DTSID="{C86B019F-CBA2-4334-AFB5-558C021E051E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -254,16 +254,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Original Price"
-              DTS:DTSID="{5EE3F291-7540-4EE7-9679-5211A7BEA533}"
+              DTS:DTSID="{E09FB080-CA34-493C-ADA9-876F6B1A9430}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="200"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Mobile"
-              DTS:DTSID="{95D8601C-014C-4F08-957F-E973A402D7FB}"
+              DTS:DTSID="{2CF89968-AC87-4049-A241-CDE3FFFDCC42}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -272,7 +272,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Discount"
-              DTS:DTSID="{520937EC-5189-482C-9AE0-B10C8D754F0E}"
+              DTS:DTSID="{E4120B81-E536-4789-831F-D0BB6BB44F9A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -281,7 +281,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="discount percentage"
-              DTS:DTSID="{4F978DA9-7513-4C2A-9FEE-F40C2D6FA05F}"
+              DTS:DTSID="{8C11C4BB-F9E2-4513-96F8-0378FD80B043}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1247,7 +1247,7 @@
                   expressionType="Notify"
                   name="SqlCommandParam"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[KHACH_HANG]) [refTable]
-where [refTable].[khach_hang_id] = ? and [refTable].[tai_khoan_id] = ? and [refTable].[so_dien_thoai] = ? and [refTable].[dia_chi] = ? and [refTable].[ho_ten] = ?</property>
+where [refTable].[khach_hang_id] = ? and [refTable].[tai_khoan_id] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -1283,7 +1283,7 @@ where [refTable].[khach_hang_id] = ? and [refTable].[tai_khoan_id] = ? and [refT
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of khachHangId]};#{Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of taiKhoanId]};#{Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of so_dien_thoai]};#{Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of dia_chi]};#{Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of ho_ten]};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of khachHangId]};#{Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of taiKhoanId]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1307,22 +1307,6 @@ where [refTable].[khach_hang_id] = ? and [refTable].[tai_khoan_id] = ? and [refT
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Copy of taiKhoanId]"
-                      cachedDataType="i4"
-                      cachedName="Copy of taiKhoanId"
-                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of taiKhoanId]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">tai_khoan_id</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Copy of khachHangId]"
                       cachedDataType="i4"
                       cachedName="Copy of khachHangId"
@@ -1340,50 +1324,15 @@ where [refTable].[khach_hang_id] = ? and [refTable].[tai_khoan_id] = ? and [refT
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Copy of so_dien_thoai]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="Copy of so_dien_thoai"
-                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of so_dien_thoai]">
+                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Copy of taiKhoanId]"
+                      cachedDataType="i4"
+                      cachedName="Copy of taiKhoanId"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of taiKhoanId]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">so_dien_thoai</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Copy of ho_ten]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="Copy of ho_ten"
-                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of ho_ten]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">ho_ten</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Copy of dia_chi]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="Copy of dia_chi"
-                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Copy of dia_chi]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">dia_chi</property>
+                          name="JoinToReferenceColumn">tai_khoan_id</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -1472,7 +1421,7 @@ where [refTable].[khach_hang_id] = ? and [refTable].[tai_khoan_id] = ? and [refT
                   expressionType="Notify"
                   name="SqlCommandParam"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[TAI_KHOAN]) [refTable]
-where [refTable].[mat_khau] = ? and [refTable].[email] = ? and [refTable].[tai_khoan_id] = ? and [refTable].[vai_tro] = ?</property>
+where [refTable].[email] = ? and [refTable].[tai_khoan_id] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -1508,7 +1457,7 @@ where [refTable].[mat_khau] = ? and [refTable].[email] = ? and [refTable].[tai_k
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of mat_khau]};#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of email]};#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of taiKhoanId]};#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of vai_tro]};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of email]};#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of taiKhoanId]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1532,23 +1481,6 @@ where [refTable].[mat_khau] = ? and [refTable].[email] = ? and [refTable].[tai_k
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input].Columns[Copy of taiKhoanId]"
-                      cachedDataType="i4"
-                      cachedName="Copy of taiKhoanId"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of taiKhoanId]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">tai_khoan_id</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input].Columns[Copy of email]"
                       cachedDataType="wstr"
                       cachedLength="100"
@@ -1566,33 +1498,16 @@ where [refTable].[mat_khau] = ? and [refTable].[email] = ? and [refTable].[tai_k
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input].Columns[Copy of mat_khau]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="Copy of mat_khau"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of mat_khau]">
+                      refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input].Columns[Copy of taiKhoanId]"
+                      cachedDataType="i4"
+                      cachedName="Copy of taiKhoanId"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of taiKhoanId]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">mat_khau</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input].Columns[Copy of vai_tro]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="Copy of vai_tro"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Copy of vai_tro]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">vai_tro</property>
+                          name="JoinToReferenceColumn">tai_khoan_id</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -5785,7 +5700,7 @@ where [refTable].[ten] = ?</property>
                       refId="Package\Data Flow Upload product\Data Conversion 1.Inputs[Data Conversion Input].Columns[Mobile]"
                       cachedCodepage="65001"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="Mobile"
                       lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]" />
                     <inputColumn
@@ -6120,7 +6035,7 @@ where [refTable].[ten] = ?</property>
                       refId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input].Columns[product]"
                       cachedCodepage="65001"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="Mobile"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
@@ -6217,6 +6132,32 @@ where [refTable].[ten] = ?</property>
                   refId="Package\Data Flow Upload product\Derived Column 2.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\Derived Column 2.Inputs[Derived Column Input].Columns[Copy of Product Name]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Copy of Product Name"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Upload product\Merge Join.Outputs[Merge Join Output].Columns[Copy of Product Name]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[LOWER](#{Package\Data Flow Upload product\Merge Join.Outputs[Merge Join Output].Columns[Copy of Product Name]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">LOWER([Copy of Product Name])</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -6915,7 +6856,7 @@ where [refTable].[ten] = ?</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Mobile]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]"
                       name="Mobile"
                       truncationRowDisposition="FailComponent">
@@ -7035,7 +6976,7 @@ where [refTable].[ten] = ?</property>
                       refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Mobile]"
                       codePage="65001"
                       dataType="str"
-                      length="50"
+                      length="200"
                       name="Mobile" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Discount]"
@@ -7073,6 +7014,166 @@ where [refTable].[ten] = ?</property>
                       refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Upload product\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[SAN_PHAM]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[SAN_PHAM]) [refTable]
+where [refTable].[ten] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="san_pham_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="hang_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ten" dataType="DT_WSTR" length="200" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="mo_ta" dataType="DT_WSTR" length="1000" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="gia" dataType="DT_NUMERIC" length="0" precision="18" scale="2" codePage="0"/&gt;&lt;referenceColumn name="con_hang" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="anh_url" dataType="DT_WSTR" length="500" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Upload product\Sort 2.Outputs[Sort Output].Columns[Copy of Product Name]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Upload product\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-UL98AJFR\CSDLNHOM12]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-UL98AJFR\CSDLNHOM12]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input].Columns[Copy of Product Name]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Copy of Product Name"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output].Columns[Copy of Product Name]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">ten</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Upload product\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\Lookup.Outputs[Lookup Match Output].Columns[ten]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="200"
+                      lineageId="Package\Data Flow Upload product\Lookup.Outputs[Lookup Match Output].Columns[ten]"
+                      name="ten"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">ten</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Upload product\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Upload product\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Upload product\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Upload product\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -7249,6 +7350,184 @@ where [refTable].[ten] = ?</property>
               </outputs>
             </component>
             <component
+              refId="Package\Data Flow Upload product\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SAN_PHAM]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Upload product\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-UL98AJFR\CSDLNHOM12]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-UL98AJFR\CSDLNHOM12]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[hang_id]"
+                      cachedDataType="i4"
+                      cachedName="hang_id"
+                      externalMetadataColumnId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hang_id]"
+                      lineageId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output].Columns[hang_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[con_hang]"
+                      cachedDataType="bool"
+                      cachedName="con_hang"
+                      externalMetadataColumnId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[con_hang]"
+                      lineageId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output].Columns[con_hang]" />
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Product Name]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Copy of Product Name"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ten]"
+                      lineageId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output].Columns[Copy of Product Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Description]"
+                      cachedDataType="wstr"
+                      cachedLength="1000"
+                      cachedName="Copy of Description"
+                      externalMetadataColumnId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[mo_ta]"
+                      lineageId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output].Columns[Copy of Description]" />
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Actual price]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of Actual price"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gia]"
+                      lineageId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output].Columns[Copy of Actual price]" />
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Link]"
+                      cachedDataType="wstr"
+                      cachedLength="1000"
+                      cachedName="Copy of Link"
+                      externalMetadataColumnId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[anh_url]"
+                      lineageId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output].Columns[Copy of Link]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[san_pham_id]"
+                      dataType="i4"
+                      name="san_pham_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hang_id]"
+                      dataType="i4"
+                      name="hang_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ten]"
+                      dataType="wstr"
+                      length="200"
+                      name="ten" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[mo_ta]"
+                      dataType="wstr"
+                      length="1000"
+                      name="mo_ta" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gia]"
+                      dataType="numeric"
+                      name="gia"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[con_hang]"
+                      dataType="bool"
+                      name="con_hang" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[anh_url]"
+                      dataType="wstr"
+                      length="500"
+                      name="anh_url" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Upload product\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Upload product\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Upload product\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow Upload product\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
@@ -7397,11 +7676,11 @@ where [refTable].[ten] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Upload product\Row Count"
+              refId="Package\Data Flow Upload product\Row Count 1"
               componentClassID="Microsoft.RowCount"
               contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
-              name="Row Count">
+              name="Row Count 1">
               <properties>
                 <property
                   dataType="System.String"
@@ -7410,7 +7689,7 @@ where [refTable].[ten] = ?</property>
               </properties>
               <inputs>
                 <input
-                  refId="Package\Data Flow Upload product\Row Count.Inputs[Row Count Input 1]"
+                  refId="Package\Data Flow Upload product\Row Count 1.Inputs[Row Count Input 1]"
                   hasSideEffects="true"
                   name="Row Count Input 1">
                   <externalMetadataColumns />
@@ -7418,9 +7697,9 @@ where [refTable].[ten] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Upload product\Row Count.Outputs[Row Count Output 1]"
+                  refId="Package\Data Flow Upload product\Row Count 1.Outputs[Row Count Output 1]"
                   name="Row Count Output 1"
-                  synchronousInputId="Package\Data Flow Upload product\Row Count.Inputs[Row Count Input 1]">
+                  synchronousInputId="Package\Data Flow Upload product\Row Count 1.Inputs[Row Count Input 1]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -7650,10 +7929,11 @@ public class Variables
 #endregion
 
 #region Namespaces
-using System;
-using System.Data;
 using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
 using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+using System;
+using System.Data;
+using System.Text.RegularExpressions;
 #endregion
 
 /// <summary>
@@ -7757,10 +8037,22 @@ public class ScriptMain : UserComponent
     /// <param name="Row">The row that is currently passing through the component</param>
     public override void Input0_ProcessInputRow(Input0Buffer Row)
     {
-        string tmp = Row.CopyofProductName;
+        string tmp = Row.ProductName;
         tmp = tmp.Split('|')[0].Trim();
-        tmp = tmp.Split(',')[0].Trim();
-        Row.CopyofProductName = tmp;
+        string pattern = @"\s*\(([^,]+),[^\)]*\)\s*$";
+        Match match = Regex.Match(tmp, pattern);
+        if (match.Success)
+        {
+            string color = match.Groups[1].Value.Trim();
+            tmp = Regex.Replace(tmp, pattern, "").Trim();
+            tmp = $"{tmp} ({color}, {Row.RAMGB}gb ram, {Row.StorageGB}gb rom)";
+            if(color.Length==0 || Row.RAMGB_IsNull || Row.StorageGB_IsNull)
+            {
+                tmp = "";
+            }
+        }
+        
+        Row.ProductName = tmp; 
     }
 
 }
@@ -7790,7 +8082,7 @@ public class Input0Buffer: ScriptBuffer
     {
     }
 
-    public String CopyofProductName
+    public String ProductName
     {
         get
         {
@@ -7801,7 +8093,7 @@ public class Input0Buffer: ScriptBuffer
             this[0] = value;
         }
     }
-    public bool CopyofProductName_IsNull
+    public bool ProductName_IsNull
     {
         get
         {
@@ -7820,33 +8112,33 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String CopyofDescription
+    public String RAMGB
     {
         get
         {
             return Buffer.GetString(BufferColumnIndexes[1]);
         }
-        set
-        {
-            this[1] = value;
-        }
     }
-    public bool CopyofDescription_IsNull
+    public bool RAMGB_IsNull
     {
         get
         {
             return IsNull(1);
         }
-        set
+    }
+
+    public String StorageGB
+    {
+        get
         {
-            if (value)
-            {
-                SetNull(1);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
+            return Buffer.GetString(BufferColumnIndexes[2]);
+        }
+    }
+    public bool StorageGB_IsNull
+    {
+        get
+        {
+            return IsNull(2);
         }
     }
 
@@ -7998,7 +8290,7 @@ namespace SC_e400e65320d440619a20501b7c4255f5.Properties {
     <msb:CodeName>SC_e400e65320d440619a20501b7c4255f5</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_e400e65320d440619a20501b7c4255f5</msb:DisplayName>
-    <msb:ProjectId>{965C8F60-9B0D-4954-81A8-A94A9C88B553}</msb:ProjectId>
+    <msb:ProjectId>{873929EC-89DF-4627-AE0F-AAFB25861892}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_e400e65320d440619a20501b7c4255f5.csproj" />
@@ -8145,130 +8437,139 @@ namespace SC_e400e65320d440619a20501b7c4255f5.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[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
-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
+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
-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
+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
-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
-AACGCEEDTAAGAOggAAAAAIYIXgOiAAYA/yAAAAAAhgg/BCYABwAUIQAAAACGCFUEEAAHAB4hAAAA
-AIYIewNMAAgAJyEAAAAAhgiYA6IACAA+IQAAAACGALsGTAAJAEYhAAAAAIYABgZMAAkATiEAAAAA
-hhjiBAYACQBuIQAAAADGAJcGpwAJAJMhAAAAAMYBkAacAA0ApiEAAAAAxgGkBpwADgCoIQAAAACG
-GOIEsQAPALchAAAAAIYY4gSxABAAxiEAAAAAgxjiBAYAEQDOIQAAAACTCM4EtwARAPohAAAAAJMI
-zwC8ABEAASIAAAAAkwjbAMEAEQAJIgAAAACWCBgGxwASABAiAAAAAIYY4gQGABIAGCIAAAAAkRjo
-BMwAEgAAAAEAvwYAAAEAxwQAAAIAvgUAAAMAlgQAAAEA2QIAAAEA2QIAAAEA2QIAAAEA2QIAAAEA
-LgAAAAIAnwAAAAMAxwQAAAQAlgQAAAEAxwQAAAEAvwYAAAEASAYAAAEASAYAAAEA2QIJAOIEAQAR
-AOIEBgAZAOIECgApAOIEEAAxAOIEEAA5AOIEEABBAOIEEABJAOIEEABRAOIEEABZAOIEEABhAOIE
-EABpAOIEBgCZAOIEBgC5AOIEFQDJAOIEBgCJAMICBgCJAM0CBgDZABIGHwDZAM0DJgBxAOIEKgBx
-AMcENABxAL4FOAB5APkCPABxAL0DQQBxAK4DRwBxALUDAQDhAOIEEABxALsGTABxAAYGTACJAOIE
-BgDZAOwFUACJANIFVwCRAOIEBgDxAGEAXQDxAMMGZAChAOIEagDBAOIEBgAuAAsA5wAuABMA8AAu
-ABsADwEuACMAGAEuACsAQQEuADMAQQEuADsAQQEuAEMAGAEuAEsARwEuAFMAQQEuAFsAXgFDAGMA
-qAGpAHMADwHJAHMADwHhAHsAqAHjAGsAqAEbAAMAAQAHAAUACAAHAAAAjQDQAAAAYgPUAAAAWQTQ
-AAAAnAPUAAAA0gTYAAAA7wDdAAAAHAbiAAIABgADAAEABwADAAIACAAFAAEACQAFAAIACgAHAAEA
-CwAHAAIADAAJAAEADQAJAAIAFwALAAIAGAANAAEAGQANAAIAGgAPAASAAAABAAAAAAAAAAAAAAAA
-AAEAAAAEAAAAAAAAAAAAAAByADYAAAAAABEAAAAAAAAAAAAAAHsAUgYAAAAAEQAAAAAAAAAAAAAA
-ewBvBgAAAAAEAAAAAAAAAAAAAAByAMYDAAAAAAAAAAABAAAAMwUAAAAAAFNDX2U0MDBlNjUzMjBk
-NDQwNjE5YTIwNTAxYjdjNDI1NWY1ADxNb2R1bGU+AElucHV0SUQAbXNjb3JsaWIAZGVmYXVsdElu
-c3RhbmNlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAGdldF9Db3B5b2ZQcm9k
-dWN0TmFtZQBzZXRfQ29weW9mUHJvZHVjdE5hbWUASW5wdXROYW1lAE1pY3Jvc29mdC5TcWxTZXJ2
-ZXIuRHRzLlBpcGVsaW5lAFR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VDdWx0
-dXJlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVy
-R2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJs
-ZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0
-ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNz
-ZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUA
-Q29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUA
-QXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRB
-dHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0
-cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lv
-bmluZwBHZXRTdHJpbmcAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNDX2U0MDBlNjUzMjBkNDQwNjE5
-YTIwNTAxYjdjNDI1NWY1LmRsbABnZXRfQ29weW9mUHJvZHVjdE5hbWVfSXNOdWxsAHNldF9Db3B5
-b2ZQcm9kdWN0TmFtZV9Jc051bGwAZ2V0X0NvcHlvZkRlc2NyaXB0aW9uX0lzTnVsbABzZXRfQ29w
-eW9mRGVzY3JpcHRpb25fSXNOdWxsAFNldE51bGwAc2V0X0l0ZW0AU3lzdGVtAFRyaW0AcmVzb3Vy
-Y2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlv
-bgBTeXN0ZW0uUmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAGdldF9Db3B5b2ZE
-ZXNjcmlwdGlvbgBzZXRfQ29weW9mRGVzY3JpcHRpb24AU3RyaW5nQ29tcGFyaXNvbgBDdWx0dXJl
-SW5mbwBPdXRwdXROYW1lTWFwAE91dHB1dE1hcABDaGFyAElucHV0MEJ1ZmZlcgBQaXBlbGluZUJ1
-ZmZlcgBTY3JpcHRCdWZmZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgAuY3RvcgAuY2N0b3IAU3lzdGVt
-LkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291
-cmNlcwBTQ19lNDAwZTY1MzIwZDQ0MDYxOWEyMDUwMWI3YzQyNTVmNS5Qcm9wZXJ0aWVzLlJlc291
-cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfZTQwMGU2NTMyMGQ0NDA2MTlhMjA1MDFi
-N2M0MjU1ZjUuUHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1
-bW5JbmRleGVzAFNldHRpbmdzAEVxdWFscwBDb25uZWN0aW9ucwBPYmplY3QARW5kT2ZSb3dzZXQA
-U3BsaXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29t
-cG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5Q
-aXBlbGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJbnB1dDBfUHJvY2Vzc0lucHV0Um93AE5l
-eHRSb3cAZ2V0X0Fzc2VtYmx5AACAm0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5ACAAYwBh
-AG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4A
-IABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBh
-AGQALgAAD0kAbgBwAHUAdAAgADAAAHFTAEMAXwBlADQAMAAwAGUANgA1ADMAMgAwAGQANAA0ADAA
-NgAxADkAYQAyADAANQAwADEAYgA3AGMANAAyADUANQBmADUALgBQAHIAbwBwAGUAcgB0AGkAZQBz
-AC4AUgBlAHMAbwB1AHIAYwBlAHMAAECHSC7bzFVAtPi/XnRvZiwABCABAQgDIAABBSABARERBCAB
-AQ4FIAEBEVkDBwEOBiABHQ4dAwMgAA4JIAMBEj0dCBJBAwYSPQMGHQgEIAEOCAUgAgEIHAQgAQII
-AyAAAgYgAgIOEXUFIAEdCAgGAAESeRF9BSAAEoCBByACAQ4SgIEIt3pcVhk04IkIiYRdzYCAzJED
-BhIUAwYSGAMGEkUDBhJRAwYSVQMGEiAFIAEBEgwEIAEBAgkgBAEIDhI9EkEFIAEBEkUEAAASUQQA
-ABJVBQABARJVBAAAEiADAAABAygADgMoAAIECAASUQQIABJVBAgAEiAIAQAIAAAAAAAeAQABAFQC
-FldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NDX2U0MDBlNjUzMjBkNDQwNjE5
-YTIwNTAxYjdjNDI1NWY1AAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMjYAAEkBABouTkVURnJh
-bWV3b3JrLFZlcnNpb249djQuNwEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdv
-cmsgNC43BAEAAAAAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VS
-ZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGlj
-S2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJj
-ZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA+DIAAAAAAAAAAAAAEjMAAAAgAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAQzAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAA
-EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
-SAAAAFhAAADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
-AAAAvQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
-AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
-AAAAAAAAALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAA
-MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBu
-AHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAA
-AABTAEMAXwBlADQAMAAwAGUANgA1ADMAMgAwAGQANAA0ADAANgAxADkAYQAyADAANQAwADEAYgA3
-AGMANAAyADUANQBmADUAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4A
-MAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfAGUANAAwADAAZQA2
-ADUAMwAyADAAZAA0ADQAMAA2ADEAOQBhADIAMAA1ADAAMQBiADcAYwA0ADIANQA1AGYANQAuAGQA
-bABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBo
-AHQAIABAACAAIAAyADAAMgA2AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMA
-AAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8AZQA0
-ADAAMABlADYANQAzADIAMABkADQANAAwADYAMQA5AGEAMgAwADUAMAAxAGIANwBjADQAMgA1ADUA
-ZgA1AC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfAGUANAAw
-ADAAZQA2ADUAMwAyADAAZAA0ADQAMAA2ADEAOQBhADIAMAA1ADAAMQBiADcAYwA0ADIANQA1AGYA
-NQAAADQACAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4
-AAgAAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA4BQAAAAgAAAAFgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAYAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAC8
+NAAAAAAAAEgAAAACAAUAsCIAACARAAABAAAAAAAAANAzAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioTMAUAzgAAAAEAABEDbwYAAAYK
+BheNGwAAASUWH3ydbxIAAAoWmm8TAAAKCnIBAABwCwYHKBQAAAoMCG8VAAAKOY0AAAAIbxYAAAoX
+bxcAAApvGAAACm8TAAAKDQYHcjUAAHAoGQAACm8TAAAKCh6NHAAAASUWBqIlF3I3AABwoiUYCaIl
+GXI9AABwoiUaA28KAAAGoiUbckMAAHCiJRwDbwwAAAaiJR1yVQAAcKIoGgAACgoJbxsAAAosEANv
+CwAABi0IA28NAAAGLAZyNQAAcAoDBm8HAAAGKh4CKBAAAAYqKgIDBAUoHAAACipSAnsdAAAKAnse
+AAAKFpRvHwAACiomAhYDKCAAAAoqIgIWKCEAAAoqWgMsCAIWKCIAAAoqcmUAAHBzIwAACnpSAnsd
+AAAKAnseAAAKF5RvHwAACioiAhcoIQAACipSAnsdAAAKAnseAAAKGJRvHwAACioiAhgoIQAACioe
+AigkAAAKKh4CKCUAAAoqfgIoJgAACgICcxQAAAZ9AQAABAICcxUAAAZ9AgAABCqSBHICAQBwGm8n
+AAAKLBUCBQIDKCgAAAoOBHMFAAAGbxIAAAYqSisHAgNvEwAABgNvDgAABi3xKgYqOgIoKQAACgID
+fQMAAAQqOgIoKQAACgIDfQQAAAQqHgIoKQAACiqufgUAAAQtHnISAQBw0AcAAAIoKgAACm8rAAAK
+cywAAAqABQAABH4FAAAEKhp+BgAABCoeAoAGAAAEKhp+BwAABCoeAigtAAAKKi5zGwAABoAHAAAE
+KgAAQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAKAYAACN+AACUBgAAIAcAACNT
+dHJpbmdzAAAAALQNAACEAQAAI1VTADgPAAAQAAAAI0dVSUQAAABIDwAA2AEAACNCbG9iAAAAAAAA
+AAIAAAFXFaIBCQEAAAD6ATMAFgAAAQAAACUAAAAIAAAABwAAABwAAAAPAAAALQAAABAAAAABAAAA
+AwAAAAkAAAAMAAAAAQAAAAQAAAABAAAAAABQAwEAAAAAAAYALAIMBQYAwAIMBQYAeAH5BA8AgAUA
+AAYApQEzBAYADwIzBAYA8AEzBAYApwIzBAYATAIzBAYAZQIzBAYAvAEzBAYA1wEFAwoAgAK9AA4A
+KQP9BQoAywS9ABIAvAS9AAoAjAS9AAoAiQa9AAYARgbmAwYAWwH5BAYA3AQsBQYAgAQeBA4AKwE6
+Aw4AjAE6Aw4AEwEJBAYAQAEMBQYAqgTmAwYAIgPmAw4ACgf9BQ4ApAT9BQ4ARQT9BQ4ACwH9BQYA
+VQTmAwYAbwTmAwYA3gDmAwYAbwDmAwYAFAczBAAAAAAlAAAAAAABAAEAAQAQAP4DAAAQAAEAAQAB
+ABAArwQAAD0AAQAFAAEAEABrBgAASQABABAAAQAQABwGAABNAAMAFAABABAAvgUAAE0ABAAVAAAA
+EAAzBY8FTQAFABYAAAEQAO0FjwVlAAcAGgAGABwGrgAGAL4FsgABAHkGtgABAHkGtgARAPIDugAR
+APsAvgARAF8AwgBQIAAAAADGAN4CBgABAFggAAAAAMYA6QIGAAEAYCAAAAAAxgDrBsYAAQA6IQAA
+AACGGOwEBgACAEIhAAAAAIYY7ARVAAIATSEAAAAAhgiTACoABQBiIQAAAACGCKMAEAAFAGwhAAAA
+AIYIngM1AAYAdSEAAAAAhgi1A8wABgCMIQAAAACGCC4AKgAHAKEhAAAAAIYIeAM1AAcAqiEAAAAA
+hgg4ACoABwC/IQAAAACGCIkDNQAHAMghAAAAAIYAAgc1AAcA0CEAAAAAhgBNBjUABwDYIQAAAACG
+GOwEBgAHAPghAAAAAMYA3gbRAAcAHSIAAAAAxgHXBsYACwAwIgAAAADGAesGxgAMADIiAAAAAIYY
+7ATbAA0AQSIAAAAAhhjsBNsADgBQIgAAAACDGOwEBgAPAFgiAAAAAJMI2AThAA8AhCIAAAAAkwjj
+AOYADwCLIgAAAACTCO8A6wAPAJMiAAAAAJYIXwbxABAAmiIAAAAAhhjsBAYAEACiIgAAAACRGPIE
+9gAQAAAAAQAGBwAAAQDRBAAAAgDIBQAAAwCaBAAAAQD/AgAAAQD/AgAAAQBGAAAAAgCzAAAAAwDR
+BAAABACaBAAAAQDRBAAAAQAGBwAAAQCPBgAAAQCPBgAAAQD/AgkA7AQBABEA7AQGABkA7AQKACkA
+7AQQADEA7AQQADkA7AQQAEEA7AQQAEkA7AQQAFEA7AQQAFkA7AQQAGEA7AQQAGkA7AQGAKEA7AQG
+AMEA7AQVANEA7AQGAJEA3gIGAJEA6QIGAOEAWQYjAOEA7QMqAOkAKQMuAPEAMwY1AHEAKAY5APkA
+1AM+AAEB9QIqAOkAVwBEAOEAPwZLAOEALwNRAHkA7ARVAHkA0QRfAHkAyAVjAIEAHwNnAHkA3QNs
+AHkAxQNyAHkAzAMBAAkB7AQQAHkAAgc1AHkATQY1AJEA7AQGAOEA9gV3AJEA3AV/AJkA7AQGABkB
+gQCFABkBEAeOAKkA7ASUAMkA7AQGAC4ACwARAS4AEwAaAS4AGwA5AS4AIwBCAS4AKwBrAS4AMwBr
+AS4AOwBrAS4AQwBCAS4ASwBxAS4AUwBrAS4AWwCIAUMAYwDSAeEAewDSAeMAawDSAekAcwA5AQkB
+cwA5ARsAAwABAAcABwAIAAkAAACnAPoAAAC5A/4AAAAyAPoAAAB8A/4AAAA8APoAAACNA/4AAADc
+BAIBAAADAQcBAABjBgwBAgAGAAMAAQAHAAMAAgAIAAUAAQAJAAUAAgAKAAcAAgALAAkAAgAMAAsA
+AgANAA0AAgAXAA8AAgAYABEAAQAZABEAAgAaABMABIAAAAEAAAAAAAAAAAAAAAAAAQAAAAQAAAAA
+AAAAAAAAAJwATgAAAAAAEQAAAAAAAAAAAAAApQCZBgAAAAAEAAAAAAAAAAAAAACcAOYDAAAAABEA
+AAAAAAAAAAAAAKUAtgYAAAAAAAAAAAEAAAA9BQAAAAAAAABTQ19lNDAwZTY1MzIwZDQ0MDYxOWEy
+MDUwMWI3YzQyNTVmNQA8TW9kdWxlPgBnZXRfUkFNR0IAZ2V0X1N0b3JhZ2VHQgBJbnB1dElEAG1z
+Y29ybGliAFJlcGxhY2UAZGVmYXVsdEluc3RhbmNlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVG
+cm9tSGFuZGxlAGdldF9Qcm9kdWN0TmFtZQBzZXRfUHJvZHVjdE5hbWUASW5wdXROYW1lAE1pY3Jv
+c29mdC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lAFR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUA
+cmVzb3VyY2VDdWx0dXJlAENhcHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UARWRpdG9yQnJv
+d3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29k
+ZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBB
+c3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZy
+YW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlE
+ZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2Vt
+Ymx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0
+Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVu
+dGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQBnZXRfVmFs
+dWUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBHZXRTdHJpbmcATWF0Y2gAZ2V0X0xl
+bmd0aABTeXN0ZW0uQ29tcG9uZW50TW9kZWwAU0NfZTQwMGU2NTMyMGQ0NDA2MTlhMjA1MDFiN2M0
+MjU1ZjUuZGxsAGdldF9SQU1HQl9Jc051bGwAZ2V0X1N0b3JhZ2VHQl9Jc051bGwAZ2V0X1Byb2R1
+Y3ROYW1lX0lzTnVsbABzZXRfUHJvZHVjdE5hbWVfSXNOdWxsAFNldE51bGwAZ2V0X0l0ZW0Ac2V0
+X0l0ZW0AU3lzdGVtAFRyaW0AcmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJh
+dGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBHcm91cENvbGxlY3Rp
+b24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZv
+AE91dHB1dE5hbWVNYXAAT3V0cHV0TWFwAEdyb3VwAENoYXIASW5wdXQwQnVmZmVyAFBpcGVsaW5l
+QnVmZmVyAFNjcmlwdEJ1ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAC5jdG9yAC5jY3RvcgBTeXN0
+ZW0uRGlhZ25vc3RpY3MAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUmVz
+b3VyY2VzAFNDX2U0MDBlNjUzMjBkNDQwNjE5YTIwNTAxYjdjNDI1NWY1LlByb3BlcnRpZXMuUmVz
+b3VyY2VzLnJlc291cmNlcwBEZWJ1Z2dpbmdNb2RlcwBTQ19lNDAwZTY1MzIwZDQ0MDYxOWEyMDUw
+MWI3YzQyNTVmNS5Qcm9wZXJ0aWVzAFZhcmlhYmxlcwBCdWZmZXJDb2x1bW5JbmRleGVzAEdldENv
+bHVtbkluZGV4ZXMAU2V0dGluZ3MARXF1YWxzAFN5c3RlbS5UZXh0LlJlZ3VsYXJFeHByZXNzaW9u
+cwBDb25uZWN0aW9ucwBnZXRfR3JvdXBzAGdldF9TdWNjZXNzAENvbmNhdABPYmplY3QARW5kT2ZS
+b3dzZXQAU3BsaXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2Ny
+aXB0Q29tcG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNl
+cnZlci5QaXBlbGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJbnB1dDBfUHJvY2Vzc0lucHV0
+Um93AE5leHRSb3cAUmVnZXgAZ2V0X0Fzc2VtYmx5AAAAAAAzXABzACoAXAAoACgAWwBeACwAXQAr
+ACkALABbAF4AXAApAF0AKgBcACkAXABzACoAJAAAAQAFIAAoAAAFLAAgAAARZwBiACAAcgBhAG0A
+LAAgAAAPZwBiACAAcgBvAG0AKQAAgJtJAHMATgB1AGwAbAAgAHAAcgBvAHAAZQByAHQAeQAgAGMA
+YQBuAG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8AIABGAGEAbABzAGUALgAgAEEAcwBzAGkAZwBu
+ACAAYQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABlACAAYwBvAGwAdQBtAG4AIABpAG4AcwB0AGUA
+YQBkAC4AAA9JAG4AcAB1AHQAIAAwAABxUwBDAF8AZQA0ADAAMABlADYANQAzADIAMABkADQANAAw
+ADYAMQA5AGEAMgAwADUAMAAxAGIANwBjADQAMgA1ADUAZgA1AC4AUAByAG8AcABlAHIAdABpAGUA
+cwAuAFIAZQBzAG8AdQByAGMAZQBzAAD0vgpyKNjuQ76oxMaJ8z6DAAQgAQEIAyAAAQUgAQEREQQg
+AQEOBSABARFdBwcEDg4SOQ4GIAEdDh0DAyAADgYAAhI5Dg4DIAACBCAAEn0FIAESeQgGAAMODg4O
+BQABDh0OAyAACAkgAwESQR0IEkUDBhJBAwYdCAQgAQ4IBSACAQgcBCABAggHIAICDhGAiQUgAR0I
+CAgAARKAjRGAkQUgABKAlQcgAgEOEoCVCLd6XFYZNOCJCImEXc2AgMyRAwYSFAMGEhgDBhJJAwYS
+VQMGElkDBhIgBSABARIMBCABAQIJIAQBCA4SQRJFBSABARJJBAAAElUEAAASWQUAAQESWQQAABIg
+AwAAAQMoAA4DKAACBAgAElUECAASWQQIABIgCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0
+aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTQ19lNDAwZTY1MzIwZDQ0MDYxOWEyMDUwMWI3YzQyNTVm
+NQAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI2AABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9u
+PXY0LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNwQBAAAAALQA
+AADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIs
+IFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1
+NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAA
+UEFEUEFEULQAAACwNAAAAAAAAAAAAADKNAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvDQAAAAA
+AAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABI
+AAAAWEAAAOwDAAAAAAAAAAAAAOwDNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAA
+AAC9BO/+AAABAAAAAQAAAAAAAAABAAAAAAA/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAA
+AAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4A
+AAAAAAAAsARMAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAAoAwAAAQAwADAAMAAw
+ADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABhAG4A
+eQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAA
+AFMAQwBfAGUANAAwADAAZQA2ADUAMwAyADAAZAA0ADQAMAA2ADEAOQBhADIAMAA1ADAAMQBiADcA
+YwA0ADIANQA1AGYANQAAADAACAABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgAw
+AC4AMAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBDAF8AZQA0ADAAMABlADYA
+NQAzADIAMABkADQANAAwADYAMQA5AGEAMgAwADUAMAAxAGIANwBjADQAMgA1ADUAZgA1AC4AZABs
+AGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgA
+dAAgAEAAIAAgADIAMAAyADYAAAAqAAEAAQBMAGUAZwBhAGwAVAByAGEAZABlAG0AYQByAGsAcwAA
+AAAAAAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBtAGUAAABTAEMAXwBlADQA
+MAAwAGUANgA1ADMAMgAwAGQANAA0ADAANgAxADkAYQAyADAANQAwADEAYgA3AGMANAAyADUANQBm
+ADUALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUwBDAF8AZQA0ADAA
+MABlADYANQAzADIAMABkADQANAAwADYAMQA5AGEAMgAwADUAMAAxAGIANwBjADQAMgA1ADUAZgA1
+AAAANAAIAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAADgA
+CAABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAJDMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAwAAADcNAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -8277,7 +8578,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   </arrayElements>
                 </property>
                 <property
@@ -8325,19 +8626,27 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   name="Input 0">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Script Component.Inputs[Input 0].Columns[Copy of Product Name]"
-                      cachedDataType="wstr"
-                      cachedLength="200"
-                      cachedName="Copy of Product Name"
-                      lineageId="Package\Data Flow Upload product\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Product Name]"
+                      refId="Package\Data Flow Upload product\Script Component.Inputs[Input 0].Columns[Product Name]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="300"
+                      cachedName="Product Name"
+                      lineageId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Output].Columns[Product Name]"
                       usageType="readWrite" />
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Script Component.Inputs[Input 0].Columns[Copy of Description]"
-                      cachedDataType="wstr"
-                      cachedLength="1000"
-                      cachedName="Copy of Description"
-                      lineageId="Package\Data Flow Upload product\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Description]"
-                      usageType="readWrite" />
+                      refId="Package\Data Flow Upload product\Script Component.Inputs[Input 0].Columns[RAM (GB)]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="RAM (GB)"
+                      lineageId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Output].Columns[RAM (GB)]" />
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\Script Component.Inputs[Input 0].Columns[Storage (GB)]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Storage (GB)"
+                      lineageId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Output].Columns[Storage (GB)]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -8577,6 +8886,7 @@ public class Variables
 #region Namespaces
 using System;
 using System.Data;
+using System.Windows.Forms.VisualStyles;
 using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
 using Microsoft.SqlServer.Dts.Runtime.Wrapper;
 #endregion
@@ -8682,9 +8992,14 @@ public class ScriptMain : UserComponent
     /// <param name="Row">The row that is currently passing through the component</param>
     public override void Input0_ProcessInputRow(Input0Buffer Row)
     {
-        /*
-         * Add your code here
-         */
+        if (Row.Colors_IsNull || Row.product_IsNull || Row.Memory_IsNull || Row.Storage_IsNull)
+        {
+            Row.product = "";
+        }
+        else
+        {
+            Row.product = $"{Row.product} ({Row.Colors}, {Row.Memory}, {Row.Storage})";
+        }
     }
 
 }
@@ -8774,6 +9089,36 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
+    public String product
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[4]);
+        }
+        set
+        {
+            this[4] = value;
+        }
+    }
+    public bool product_IsNull
+    {
+        get
+        {
+            return IsNull(4);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(4);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
     new public bool NextRow()
     {
         return base.NextRow();
@@ -8825,23 +9170,23 @@ namespace SC_796309f616ee4cf3b1dc26591985b875.Properties {
                       dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
                     <arrayElement
                       dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
   <msb:PropertyGroup>
-    <msb:Language>msBuild</msb:Language>
     <msb:CodeName>SC_796309f616ee4cf3b1dc26591985b875</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_796309f616ee4cf3b1dc26591985b875</msb:DisplayName>
-    <msb:ProjectId>{C8AD9E51-6739-4FBC-B133-CCE3ACE4C178}</msb:ProjectId>
+    <msb:ProjectId>{ACA53D06-AFC3-4544-BD10-969B4A9AE998}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_796309f616ee4cf3b1dc26591985b875.csproj" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
     <msb:File Include="Properties\Settings.settings" />
     <msb:File Include="Properties\AssemblyInfo.cs" />
     <msb:File Include="Properties\Resources.resx" />
     <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="main.cs" />
-    <msb:File Include="BufferWrapper.cs" />
     <msb:File Include="Properties\Settings.Designer.cs" />
-    <msb:File Include="ComponentWrapper.cs" />
   </msb:ItemGroup>
 </c:Project>]]></arrayElement>
                     <arrayElement
@@ -8884,7 +9229,7 @@ using System.Runtime.CompilerServices;
                       dataType="System.String"><![CDATA[UTF8]]></arrayElement>
                     <arrayElement
                       dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8896,9 +9241,10 @@ using System.Runtime.CompilerServices;
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SC_796309f616ee4cf3b1dc26591985b875</RootNamespace>
     <AssemblyName>SC_796309f616ee4cf3b1dc26591985b875</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -9068,113 +9414,122 @@ namespace SC_796309f616ee4cf3b1dc26591985b875.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[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
-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
+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
-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
+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
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAaBEAAAAgAAAAEgAAAAIA
-AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABE
-MQAAAAAAAEgAAAACAAUA1CEAAIQOAAABAAAAAAAAAFgwAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioGKh4CKBAAAAYqKgIDBAUoEgAA
-CipSAnsTAAAKAnsUAAAKFpRvFQAACioiAhYoFgAACipSAnsTAAAKAnsUAAAKF5RvFQAACioiAhco
-FgAACipSAnsTAAAKAnsUAAAKGJRvFQAACioiAhgoFgAACipSAnsTAAAKAnsUAAAKGZRvFQAACioi
-AhkoFgAACioeAigXAAAKKh4CKBgAAAoqfgIoGQAACgICcxQAAAZ9AQAABAICcxUAAAZ9AgAABCqS
-BHIBAABwGm8aAAAKLBUCBQIDKBsAAAoOBHMFAAAGbxIAAAYqSisHAgNvEwAABgNvDgAABi3xKjoC
-KBwAAAoCA30DAAAEKjoCKBwAAAoCA30EAAAEKh4CKBwAAAoqrn4FAAAELR5yEQAAcNAHAAACKB0A
-AApvHgAACnMfAAAKgAUAAAR+BQAABCoafgYAAAQqHgKABgAABCoafgcAAAQqHgIoIAAACioucxsA
-AAaABwAABCoAAABCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAACoBQAAI34AABQG
-AABABgAAI1N0cmluZ3MAAAAAVAwAAIQAAAAjVVMA2AwAABAAAAAjR1VJRAAAAOgMAACcAQAAI0Js
-b2IAAAAAAAAAAgAAAVcVoAEJAQAAAPoBMwAWAAABAAAAHgAAAAgAAAAHAAAAHAAAAA0AAAAgAAAA
-EAAAAAMAAAALAAAADAAAAAEAAAAEAAAAAQAAAAAA+QIBAAAAAAAGAPABVgQGAIQCVgQGADwBQwQP
-AMoEAAAGAGkBsgMGANMBsgMGALQBsgMGAGsCsgMGABACsgMGACkCsgMGAIABsgMGAJsBvwIKAEQC
-iQAKABUEiQAOAAYEiQAKAOEDiQAKAKYFiQAGAGkFagMGAB8BQwQGACYEdgQGANUDnQMSAO8A4wIS
-AFAB4wISANcAiAMGAAQBVgQGANwCagMGAMQDagMGAKoAagMGAFsAagMGACsGsgMAAAAAJQAAAAAA
-AQABAAEAEAB9AwAAEAABAAEAAQAQAPkDAAA5AAEABQABABAAiAUAAEUAAQAQAAEAEABSBQAASQAD
-ABQAAQAQAAgFAABJAAQAFQAAABAAfQTZBEkABQAWAAABEAA3BdkEYQAHABoABgBSBW0ABgAIBXEA
-AQCWBXUAAQCWBXUAEQBxA3kAEQDHAH0AEQA/AIEAUCAAAAAAxgCiAgYAAQBYIAAAAADGAK0CBgAB
-AGAgAAAAAMYACAaFAAEAYiAAAAAAhhg2BAYAAgBqIAAAAACGGDYEGwACAHUgAAAAAIYIRwWLAAUA
-iiAAAAAAhgg0AzcABQCTIAAAAACGCF4FiwAFAKggAAAAAIYIRgM3AAUAsSAAAAAAhgg0BosABQDG
-IAAAAACGCFgDNwAFAM8gAAAAAIYITwCLAAUA5CAAAAAAhgghAzcABQDtIAAAAACGAB8GNwAFAPUg
-AAAAAIYAcAU3AAUA/SAAAAAAhhg2BAYABQAdIQAAAADGAPsFjwAFAEIhAAAAAMYB9AWFAAkAYCAA
-AAAAxgEIBoUACgBVIQAAAACGGDYEmQALAGQhAAAAAIYYNgSZAAwAcyEAAAAAgxg2BAYADQB7IQAA
-AACTCCIEnwANAKchAAAAAJMIrwCkAA0AriEAAAAAkwi7AKkADQC2IQAAAACWCHwFrwAOAL0hAAAA
-AIYYNgQGAA4AxSEAAAAAkRg8BLQADgAAAAEAIwYAAAEAGwQAAAIAEgUAAAMA7wMAAAEALgAAAAIA
-fwAAAAMAGwQAAAQA7wMAAAEAGwQAAAEAIwYAAAEArAUAAAEArAUAAAEAuQIJADYEAQARADYEBgAZ
-ADYECgApADYEEAAxADYEEAA5ADYEEABBADYEEABJADYEEABRADYEEABZADYEEABhADYEEABpADYE
-BgCZADYEBgC5ADYEFQDJADYEBgCJAKICBgCJAK0CBgBxADYEGwBxABsEJQBxABIFKQB5ANkCLQBx
-AGMDMgBxAB8GNwBxAHAFNwCJADYEBgDRAEAFOwCJACYFQgCRADYEBgDhAG0ASADhACcGTwChADYE
-VADBADYEBgAuAAsAzwAuABMA2AAuABsA9wAuACMAAAEuACsAKQEuADMAKQEuADsAKQEuAEMAAAEu
-AEsALwEuAFMAKQEuAFsARgFDAGMAlAHhAHsAlAHjAGsAlAEpAXMA9wBJAXMA9wADAAEABwAJAAgA
-CwAAAEsFuAAAADgDvAAAAGIFuAAAAEoDvAAAADgGuAAAAFwDvAAAAFMAuAAAACUDvAAAACYEwAAA
-AM8AxQAAAIAFygACAAYAAwACAAcABQACAAgABwACAAkACQACAAoACwACAAsADQACAAwADwACAA0A
-EQACABcAEwACABgAFQABABkAFQACABoAFwAEgAAAAQAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA
-AAAAWwA2AAAAAAARAAAAAAAAAAAAAABkALYFAAAAABEAAAAAAAAAAAAAAGQA0wUAAAAABAAAAAAA
-AAAAAAAAWwBqAwAAAAAAAAAAAQAAAIcEAAAAAABTQ183OTYzMDlmNjE2ZWU0Y2YzYjFkYzI2NTkx
-OTg1Yjg3NQA8TW9kdWxlPgBJbnB1dElEAG1zY29ybGliAGRlZmF1bHRJbnN0YW5jZQBnZXRfU3Rv
-cmFnZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBJbnB1dE5hbWUATWljcm9z
-b2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQBy
-ZXNvdXJjZUN1bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UARWRpdG9yQnJvd3NhYmxlU3Rh
-dGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0
-ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRp
-dGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0
-dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlv
-bkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVj
-dEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9uZW50
-RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBh
-dGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQB2YWx1ZQBTeXN0ZW0uUnVu
-dGltZS5WZXJzaW9uaW5nAEdldFN0cmluZwBTeXN0ZW0uQ29tcG9uZW50TW9kZWwAU0NfNzk2MzA5
-ZjYxNmVlNGNmM2IxZGMyNjU5MTk4NWI4NzUuZGxsAGdldF9TdG9yYWdlX0lzTnVsbABnZXRfTW9k
-ZWxzX0lzTnVsbABnZXRfQ29sb3JzX0lzTnVsbABnZXRfTWVtb3J5X0lzTnVsbABTeXN0ZW0AcmVz
-b3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXph
-dGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAE91dHB1
-dE5hbWVNYXAAT3V0cHV0TWFwAElucHV0MEJ1ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZm
-ZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5
-c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ183OTYzMDlm
-NjE2ZWU0Y2YzYjFkYzI2NTkxOTg1Yjg3NS5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMA
-RGVidWdnaW5nTW9kZXMAU0NfNzk2MzA5ZjYxNmVlNGNmM2IxZGMyNjU5MTk4NWI4NzUuUHJvcGVy
-dGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRp
-bmdzAEVxdWFscwBnZXRfTW9kZWxzAENvbm5lY3Rpb25zAGdldF9Db2xvcnMAT2JqZWN0AEVuZE9m
-Um93c2V0AGdldF9EZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENv
-bXBvbmVudABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIu
-UGlwZWxpbmVIb3N0AElucHV0MF9Qcm9jZXNzSW5wdXQASW5wdXQwX1Byb2Nlc3NJbnB1dFJvdwBO
-ZXh0Um93AGdldF9Bc3NlbWJseQBnZXRfTWVtb3J5AAAAD0kAbgBwAHUAdAAgADAAAHFTAEMAXwA3
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA6BMAAAAgAAAAFAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADE
+MwAAAAAAAEgAAAACAAUAoCIAADgQAAABAAAAAAAAANgyAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioTMAUAggAAAAAAAAADbwkAAAYt
+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
+AOkAbQBUAOkAlwZbAKEAhwRgAMEAhwQGAC4ACwDgAC4AEwDpAC4AGwAIAS4AIwARAS4AKwA6AS4A
+MwA6AS4AOwA6AS4AQwARAS4ASwBAAS4AUwA6AS4AWwBXAUMAYwChAeEAewChAeMAawChAWkBcwAI
+AYkBcwAIAQMAAQAHAAsACAANAAAAnAXJAAAAOAPNAAAAswXJAAAASgPNAAAAqAbJAAAAggPNAAAA
+UwDJAAAAJQPNAAAA2AXJAAAAbwPNAAAAdwTRAAAAzwDWAAAA8AXbAAIABgADAAIABwAFAAIACAAH
+AAIACQAJAAIACgALAAIACwANAAIADAAPAAIADQARAAIADgATAAEADwATAAIAEAAVAAEAEQAVAAIA
+GwAXAAIAHAAZAAEAHQAZAAIAHgAbAASAAAABAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAABn
+ADYAAAAAABEAAAAAAAAAAAAAAHAAJgYAAAAAEQAAAAAAAAAAAAAAcABDBgAAAAAEAAAAAAAAAAAA
+AABnAKEDAAAAAAAAAAABAAAA2AQAAAAAAAAAU0NfNzk2MzA5ZjYxNmVlNGNmM2IxZGMyNjU5MTk4
+NWI4NzUAPE1vZHVsZT4ASW5wdXRJRABtc2NvcmxpYgBkZWZhdWx0SW5zdGFuY2UAZ2V0X1N0b3Jh
+Z2UAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUASW5wdXROYW1lAE1pY3Jvc29m
+dC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lAFR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVz
+b3VyY2VDdWx0dXJlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJyb3dzYWJsZVN0YXRl
+AENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUA
+RGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRs
+ZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRy
+aWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25B
+dHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RB
+dHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVu
+dHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRp
+YmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAdmFsdWUAU3lzdGVtLlJ1bnRp
+bWUuVmVyc2lvbmluZwBHZXRTdHJpbmcAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNDXzc5NjMwOWY2
+MTZlZTRjZjNiMWRjMjY1OTE5ODViODc1LmRsbABnZXRfU3RvcmFnZV9Jc051bGwAZ2V0X01vZGVs
+c19Jc051bGwAZ2V0X0NvbG9yc19Jc051bGwAZ2V0X3Byb2R1Y3RfSXNOdWxsAHNldF9wcm9kdWN0
+X0lzTnVsbABnZXRfTWVtb3J5X0lzTnVsbABTZXROdWxsAHNldF9JdGVtAFN5c3RlbQByZXNvdXJj
+ZU1hbgBTY3JpcHRNYWluAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9u
+AFN5c3RlbS5SZWZsZWN0aW9uAEludmFsaWRPcGVyYXRpb25FeGNlcHRpb24AU3RyaW5nQ29tcGFy
+aXNvbgBDdWx0dXJlSW5mbwBPdXRwdXROYW1lTWFwAE91dHB1dE1hcABJbnB1dDBCdWZmZXIAUGlw
+ZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIALmN0b3IALmNjdG9y
+AFN5c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3Rl
+bS5SZXNvdXJjZXMAU0NfNzk2MzA5ZjYxNmVlNGNmM2IxZGMyNjU5MTk4NWI4NzUuUHJvcGVydGll
+cy5SZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDXzc5NjMwOWY2MTZlZTRjZjNi
+MWRjMjY1OTE5ODViODc1LlByb3BlcnRpZXMAVmFyaWFibGVzAEJ1ZmZlckNvbHVtbkluZGV4ZXMA
+R2V0Q29sdW1uSW5kZXhlcwBTZXR0aW5ncwBFcXVhbHMAZ2V0X01vZGVscwBDb25uZWN0aW9ucwBn
+ZXRfQ29sb3JzAENvbmNhdABPYmplY3QAZ2V0X3Byb2R1Y3QAc2V0X3Byb2R1Y3QARW5kT2ZSb3dz
+ZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9u
+ZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBl
+bGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJbnB1dDBfUHJvY2Vzc0lucHV0Um93AE5leHRS
+b3cAZ2V0X0Fzc2VtYmx5AGdldF9NZW1vcnkAAAABAAUgACgAAAUsACAAAAMpAACAm0kAcwBOAHUA
+bABsACAAcAByAG8AcABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAg
+AEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUA
+IABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAAD0kAbgBwAHUAdAAgADAAAHFTAEMAXwA3
 ADkANgAzADAAOQBmADYAMQA2AGUAZQA0AGMAZgAzAGIAMQBkAGMAMgA2ADUAOQAxADkAOAA1AGIA
-OAA3ADUALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAB7eeLtC8q+
-QL5EYFhuiRm6AAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFZCSADARI9HQgSQQMGEj0DBh0IBCAB
-DggEIAECCAMgAAIGIAICDhFtBSABHQgIBgABEnERdQQgABJ5BiACAQ4SeQi3elxWGTTgiQiJhF3N
-gIDMkQMGEhQDBhIYAwYSRQMGElEDBhJVAwYSIAUgAQESDAMgAA4JIAQBCA4SPRJBBSABARJFBAAA
-ElEEAAASVQUAAQESVQQAABIgAwAAAQMoAA4DKAACBAgAElEECAASVQQIABIgCAEACAAAAAAAHgEA
-AQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTQ183OTYzMDlmNjE2ZWU0
-Y2YzYjFkYzI2NTkxOTg1Yjg3NQAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI2AABNAQAcLk5F
-VEZyYW1ld29yayxWZXJzaW9uPXY0LjcuMgEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUULk5FVCBG
-cmFtZXdvcmsgNC43LjIEAQAAAAAAALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5S
-ZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFs
-LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGlt
-ZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAA4MQAAAAAAAAAAAABSMQAAACAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAARDEAAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAA
-AAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
-AEgAAABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
-AAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
-AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
-bgAAAAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAw
-ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
-bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
-AAAAUwBDAF8ANwA5ADYAMwAwADkAZgA2ADEANgBlAGUANABjAGYAMwBiADEAZABjADIANgA1ADkA
-MQA5ADgANQBiADgANwA1AAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
-ADAALgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA3ADkANgAzADAA
-OQBmADYAMQA2AGUAZQA0AGMAZgAzAGIAMQBkAGMAMgA2ADUAOQAxADkAOAA1AGIAOAA3ADUALgBk
-AGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcA
-aAB0ACAAQAAgACAAMgAwADIANgAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBz
-AAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADcA
-OQA2ADMAMAA5AGYANgAxADYAZQBlADQAYwBmADMAYgAxAGQAYwAyADYANQA5ADEAOQA4ADUAYgA4
-ADcANQAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwA3ADkA
-NgAzADAAOQBmADYAMQA2AGUAZQA0AGMAZgAzAGIAMQBkAGMAMgA2ADUAOQAxADkAOAA1AGIAOAA3
-ADUAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAA
-OAAIAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAA
+OAA3ADUALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAADmDJYbUD
+302AnA/VVp8dMgAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERWQUAAQ4dDgkgAwESPR0IEkEDBhI9
+AwYdCAQgAQ4IBCABAggFIAIBCBwDIAACBiACAg4RcQUgAR0ICAYAARJ1EXkEIAASfQYgAgEOEn0I
+t3pcVhk04IkIiYRdzYCAzJEDBhIUAwYSGAMGEkUDBhJRAwYSVQMGEiAFIAEBEgwDIAAOBCABAQIJ
+IAQBCA4SPRJBBSABARJFBAAAElEEAAASVQUAAQESVQQAABIgAwAAAQMoAA4DKAACBAgAElEECAAS
+VQQIABIgCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgB
+ACNTQ183OTYzMDlmNjE2ZWU0Y2YzYjFkYzI2NTkxOTg1Yjg3NQAABQEAAAAAFgEAEUNvcHlyaWdo
+dCBAICAyMDI2AABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rp
+c3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNwQBAAAAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3Rl
+bS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1
+bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVz
+b3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAAuDMAAAAAAAAA
+AAAA0jMAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMQzAAAAAAAAAAAAAAAAX0NvckRsbE1haW4A
+bXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
+SAAAAFhAAADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
+AAAAvQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
+AAAAAAAAALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAA
+MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBu
+AHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAA
+AABTAEMAXwA3ADkANgAzADAAOQBmADYAMQA2AGUAZQA0AGMAZgAzAGIAMQBkAGMAMgA2ADUAOQAx
+ADkAOAA1AGIAOAA3ADUAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4A
+MAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADcAOQA2ADMAMAA5
+AGYANgAxADYAZQBlADQAYwBmADMAYgAxAGQAYwAyADYANQA5ADEAOQA4ADUAYgA4ADcANQAuAGQA
+bABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBo
+AHQAIABAACAAIAAyADAAMgA2AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMA
+AAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8ANwA5
+ADYAMwAwADkAZgA2ADEANgBlAGUANABjAGYAMwBiADEAZABjADIANgA1ADkAMQA5ADgANQBiADgA
+NwA1AC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfADcAOQA2
+ADMAMAA5AGYANgAxADYAZQBlADQAYwBmADMAYgAxAGQAYwAyADYANQA5ADEAOQA4ADUAYgA4ADcA
+NQAAADQACAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4
+AAgAAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -9182,7 +9537,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAGQxAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAA5DMAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -9191,7 +9546,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </arrayElements>
                 </property>
                 <property
@@ -9227,7 +9582,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   dataType="System.String"
                   description="Checksum to match component metedata against compiled codes."
                   name="MetadataChecksum140"
-                  typeConverter="NOTBROWSABLE">8D</property>
+                  typeConverter="NOTBROWSABLE">C9</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
@@ -9266,6 +9621,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedLength="50"
                       cachedName="Storage"
                       lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Storage]" />
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\Script Component 1.Inputs[Input 0].Columns[Mobile]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Mobile"
+                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]"
+                      usageType="readWrite" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -9837,12 +10200,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               version="1">
               <inputs>
                 <input
-                  refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3]"
+                  refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 2]"
                   hasSideEffects="true"
-                  name="Union All Input 3">
+                  name="Union All Input 2">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3].Columns[Brands]"
+                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 2].Columns[Brands]"
                       cachedDataType="wstr"
                       cachedLength="300"
                       cachedName="Brands"
@@ -9856,7 +10219,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3].Columns[Copy of Product Name]"
+                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 2].Columns[Copy of Product Name]"
                       cachedDataType="wstr"
                       cachedLength="200"
                       cachedName="Copy of Product Name"
@@ -9870,7 +10233,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3].Columns[Copy of Actual price]"
+                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 2].Columns[Copy of Actual price]"
                       cachedDataType="numeric"
                       cachedName="Copy of Actual price"
                       cachedPrecision="18"
@@ -9885,7 +10248,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3].Columns[Copy of Description]"
+                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 2].Columns[Copy of Description]"
                       cachedDataType="wstr"
                       cachedLength="1000"
                       cachedName="Copy of Description"
@@ -9899,7 +10262,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3].Columns[Copy of Link]"
+                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 2].Columns[Copy of Link]"
                       cachedDataType="wstr"
                       cachedLength="1000"
                       cachedName="Copy of Link"
@@ -9916,12 +10279,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 1]"
+                  refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3]"
                   hasSideEffects="true"
-                  name="Union All Input 1">
+                  name="Union All Input 3">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 1].Columns[Copy of product]"
+                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3].Columns[Copy of product]"
                       cachedDataType="wstr"
                       cachedLength="200"
                       cachedName="Copy of product"
@@ -9935,7 +10298,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 1].Columns[Copy of Original Price]"
+                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3].Columns[Copy of Original Price]"
                       cachedDataType="numeric"
                       cachedName="Copy of Original Price"
                       cachedPrecision="18"
@@ -9950,21 +10313,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 1].Columns[Copy of des]"
-                      cachedDataType="wstr"
-                      cachedLength="1000"
-                      cachedName="Copy of des"
-                      lineageId="Package\Data Flow Upload product\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of des]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Upload product\Union All.Outputs[Union All Output 1].Columns[Copy of Description]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 1].Columns[Copy of Brands]"
+                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3].Columns[Copy of Brands]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="Copy of Brands"
@@ -9977,14 +10326,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           name="OutputColumnLineageID">#{Package\Data Flow Upload product\Union All.Outputs[Union All Output 1].Columns[Brands]}</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3].Columns[Copy of des]"
+                      cachedDataType="wstr"
+                      cachedLength="1000"
+                      cachedName="Copy of des"
+                      lineageId="Package\Data Flow Upload product\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of des]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Upload product\Union All.Outputs[Union All Output 1].Columns[Copy of Description]}</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 2]"
+                  refId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 1]"
                   dangling="true"
                   hasSideEffects="true"
-                  name="Union All Input 2">
+                  name="Union All Input 1">
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -10032,35 +10395,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           </components>
           <paths>
             <path
+              refId="Package\Data Flow Upload product.Paths[1]"
+              endId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 2]"
+              name="1"
+              startId="Package\Data Flow Upload product\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
               refId="Package\Data Flow Upload product.Paths[Case 1]"
               endId="Package\Data Flow Upload product\Derived Column.Inputs[Derived Column Input]"
               name="Case 1"
               startId="Package\Data Flow Upload product\Conditional Split.Outputs[Case 1]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Data Conversion Output]"
-              endId="Package\Data Flow Upload product\Script Component.Inputs[Input 0]"
-              name="Data Conversion Output"
-              startId="Package\Data Flow Upload product\Data Conversion.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\Data Flow Upload product.Paths[Data Conversion Output1]"
-              endId="Package\Data Flow Upload product\Script Component 1.Inputs[Input 0]"
+              endId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3]"
               name="Data Conversion Output"
               startId="Package\Data Flow Upload product\Data Conversion 1.Outputs[Data Conversion Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Derived Column Output]"
-              endId="Package\Data Flow Upload product\Data Conversion 1.Inputs[Data Conversion Input]"
+              endId="Package\Data Flow Upload product\Sort 2.Inputs[Sort Input]"
               name="Derived Column Output"
-              startId="Package\Data Flow Upload product\Derived Column 1.Outputs[Derived Column Output]" />
+              startId="Package\Data Flow Upload product\Derived Column 2.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Derived Column Output1]"
-              endId="Package\Data Flow Upload product\Data Conversion.Inputs[Data Conversion Input]"
+              endId="Package\Data Flow Upload product\Script Component.Inputs[Input 0]"
               name="Derived Column Output"
               startId="Package\Data Flow Upload product\Derived Column.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Derived Column Output2]"
-              endId="Package\Data Flow Upload product\Sort 2.Inputs[Sort Input]"
+              endId="Package\Data Flow Upload product\Script Component 1.Inputs[Input 0]"
               name="Derived Column Output"
-              startId="Package\Data Flow Upload product\Derived Column 2.Outputs[Derived Column Output]" />
+              startId="Package\Data Flow Upload product\Derived Column 1.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Flat File Source Output]"
               endId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input]"
@@ -10071,6 +10434,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               endId="Package\Data Flow Upload product\Conditional Split.Inputs[Conditional Split Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Upload product.Paths[Lookup Match Output]"
+              endId="Package\Data Flow Upload product\Row Count 1.Inputs[Row Count Input 1]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Upload product\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Upload product.Paths[Lookup No Match Output]"
+              endId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Data Flow Upload product\Lookup.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Merge Join Output]"
               endId="Package\Data Flow Upload product\Derived Column 2.Inputs[Derived Column Input]"
@@ -10083,12 +10456,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               startId="Package\Data Flow Upload product\OLE DB Source.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Output 0]"
-              endId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 3]"
+              endId="Package\Data Flow Upload product\Data Conversion.Inputs[Data Conversion Input]"
               name="Output 0"
               startId="Package\Data Flow Upload product\Script Component.Outputs[Output 0]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Output 01]"
-              endId="Package\Data Flow Upload product\Union All.Inputs[Union All Input 1]"
+              endId="Package\Data Flow Upload product\Data Conversion 1.Inputs[Data Conversion Input]"
               name="Output 0"
               startId="Package\Data Flow Upload product\Script Component 1.Outputs[Output 0]" />
             <path
@@ -10103,7 +10476,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               startId="Package\Data Flow Upload product\Sort.Outputs[Sort Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Sort Output2]"
-              endId="Package\Data Flow Upload product\Row Count.Inputs[Row Count Input 1]"
+              endId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]"
               name="Sort Output"
               startId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output]" />
             <path
@@ -10305,9 +10678,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10329,9 +10700,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10353,9 +10722,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10389,9 +10756,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10425,9 +10790,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10605,9 +10968,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10641,9 +11002,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10713,9 +11072,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10727,7 +11084,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10737,7 +11094,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10763,7 +11120,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10773,7 +11130,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10897,9 +11254,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10921,9 +11276,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10945,9 +11298,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10981,9 +11332,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11017,9 +11366,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11053,9 +11400,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11125,9 +11470,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11161,9 +11504,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11211,65 +11552,73 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Data Flow Upload product\Merge Join"
-          TopLeft="719.619033016856,414.485708930237" />
-        <NodeLayout
           Size="151.2,41.6"
           Id="Package\Data Flow Upload product\Flat File Source"
           TopLeft="171.999997437,30.999999538064" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Data Flow Upload product\Derived Column 1"
-          TopLeft="379.999994337559,87.6000015985964" />
         <NodeLayout
           Size="106.4,41.6"
           Id="Package\Data Flow Upload product\Sort 2"
           TopLeft="399.71427833892,557.695233600386" />
         <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Data Flow Upload product\Derived Column"
-          TopLeft="180.99999730289,151.599999254942" />
+          Size="161.6,41.6"
+          Id="Package\Data Flow Upload product\Derived Column 1"
+          TopLeft="379.999994337559,87.6000015985964" />
         <NodeLayout
           Size="120,41.6"
           Id="Package\Data Flow Upload product\Union All"
           TopLeft="343.999994874001,341.495234255044" />
         <NodeLayout
-          Size="152,41.6"
-          Id="Package\Data Flow Upload product\OLE DB Source"
-          TopLeft="685.619033523496,221.285711165411" />
+          Size="152.8,41.6"
+          Id="Package\Data Flow Upload product\Derived Column"
+          TopLeft="180.99999730289,151.599999254942" />
         <NodeLayout
           Size="161.6,41.6"
           Id="Package\Data Flow Upload product\Derived Column 2"
           TopLeft="629.61903435796,496.08570922826" />
         <NodeLayout
-          Size="160,41.6"
-          Id="Package\Data Flow Upload product\Flat File Source 1"
-          TopLeft="380.999994322658,30.999999538064" />
+          Size="161.6,41.6"
+          Id="Package\Data Flow Upload product\Script Component"
+          TopLeft="206.190464924726,234.619046814054" />
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Data Flow Upload product\OLE DB Source"
+          TopLeft="685.619033523496,221.285711165411" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Data Flow Upload product\Row Count 1"
+          TopLeft="334.899981833002,646.26666436447" />
         <NodeLayout
           Size="97.6,41.6"
           Id="Package\Data Flow Upload product\Sort"
           TopLeft="604.619034730489,337.685709645493" />
         <NodeLayout
-          Size="156,41.6"
-          Id="Package\Data Flow Upload product\Data Conversion"
-          TopLeft="191.999997138977,207.999996900559" />
+          Size="160,41.6"
+          Id="Package\Data Flow Upload product\Flat File Source 1"
+          TopLeft="380.999994322658,30.999999538064" />
         <NodeLayout
           Size="129.6,41.6"
-          Id="Package\Data Flow Upload product\Row Count"
-          TopLeft="169.714281766187,519.895233853706" />
+          Id="Package\Data Flow Upload product\Merge Join"
+          TopLeft="719.619033016856,414.485708930237" />
         <NodeLayout
           Size="106.4,41.6"
           Id="Package\Data Flow Upload product\Sort 1"
           TopLeft="811.619031645949,317.485710196835" />
         <NodeLayout
+          Size="156,41.6"
+          Id="Package\Data Flow Upload product\Data Conversion"
+          TopLeft="77.8333367101017,310.266662856076" />
+        <NodeLayout
           Size="164,41.6"
           Id="Package\Data Flow Upload product\Data Conversion 1"
-          TopLeft="380.833327426678,141.599997600714" />
+          TopLeft="384.999993865688,262.933330090311" />
         <NodeLayout
           Size="153.6,41.6"
           Id="Package\Data Flow Upload product\Conditional Split"
           TopLeft="174.999997392297,92.800003159046" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Data Flow Upload product\Script Component 1"
+          TopLeft="388.809502565909,198.590475636021" />
         <EdgeLayout
           Id="Package\Data Flow Upload product.Paths[Union All Output 1]"
           TopLeft="463.999994874001,360.390471950269">
@@ -11290,42 +11639,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Sort Output2]"
-          TopLeft="399.71427833892,578.495233600386">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-100.399996572733,-37.7999997466802"
-              Start="0,0"
-              End="-92.899996572733,-37.7999997466802">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-46.1999982863665,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-46.1999982863665,0"
-                    Point2="-50.1999982863665,0"
-                    Point3="-50.1999982863665,-4" />
-                  <mssgle:LineSegment
-                    End="-50.1999982863665,-33.7999997466802" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-50.1999982863665,-33.7999997466802"
-                    Point2="-50.1999982863665,-37.7999997466802"
-                    Point3="-54.1999982863665,-37.7999997466802" />
-                  <mssgle:LineSegment
-                    End="-92.899996572733,-37.7999997466802" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-58.1999982863665,1,16,16"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11388,6 +11701,62 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                     Point3="-80.3999986290934,31.6999993667006" />
                   <mssgle:LineSegment
                     End="-80.3999986290934,47.8999987334013" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Output 01]"
+          TopLeft="470.504748215798,240.190475636021">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,22.7428544542896"
+              Start="0,0"
+              End="0,15.2428544542896">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.2428544542896" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Output 0]"
+          TopLeft="286.990464924726,276.219046814054">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-131.157128214625,34.0476160420218"
+              Start="0,0"
+              End="-131.157128214625,26.5476160420218">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.0238080210109" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.0238080210109"
+                    Point2="0,17.0238080210109"
+                    Point3="-4,17.0238080210109" />
+                  <mssgle:LineSegment
+                    End="-127.157128214625,17.0238080210109" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-127.157128214625,17.0238080210109"
+                    Point2="-131.157128214625,17.0238080210109"
+                    Point3="-131.157128214625,21.0238080210109" />
+                  <mssgle:LineSegment
+                    End="-131.157128214625,26.5476160420218" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11534,6 +11903,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Upload product.Paths[Derived Column Output2]"
+          TopLeft="460.799994337559,129.200001598596">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13.20950822835,69.3904740374246"
+              Start="0,0"
+              End="13.20950822835,61.8904740374246">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.6952370187123" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.6952370187123"
+                    Point2="0,34.6952370187123"
+                    Point3="4,34.6952370187123" />
+                  <mssgle:LineSegment
+                    End="9.20950822834999,34.6952370187123" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.20950822834999,34.6952370187123"
+                    Point2="13.20950822835,34.6952370187123"
+                    Point3="13.20950822835,38.6952370187123" />
+                  <mssgle:LineSegment
+                    End="13.20950822835,61.8904740374246" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Derived Column Output1]"
+          TopLeft="257.39999730289,193.199999254942">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.5904676218362,41.4190475591123"
+              Start="0,0"
+              End="29.5904676218362,33.9190475591123">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.7095237795561" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.7095237795561"
+                    Point2="0,20.7095237795561"
+                    Point3="4,20.7095237795561" />
+                  <mssgle:LineSegment
+                    End="25.5904676218362,20.7095237795561" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.5904676218362,20.7095237795561"
+                    Point2="29.5904676218362,20.7095237795561"
+                    Point3="29.5904676218362,24.7095237795561" />
+                  <mssgle:LineSegment
+                    End="29.5904676218362,33.9190475591123" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Derived Column Output]"
           TopLeft="629.61903435796,516.88570922826">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11567,65 +12004,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Derived Column Output1]"
-          TopLeft="180.99999730289,177.999999254942">
+          Id="Package\Data Flow Upload product.Paths[Data Conversion Output]"
+          TopLeft="466.999993865688,304.533330090311">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="10.9999998360874,50.7999976456168"
+              EndConnector="-62.9999989916869,36.9619041647335"
               Start="0,0"
-              End="3.49999983608737,50.7999976456168">
+              End="-62.9999989916869,29.4619041647335">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-18.5,0" />
+                    End="0,14.4809520823667" />
                   <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
+                    Point1="0,14.4809520823667"
+                    Point2="0,18.4809520823667"
+                    Point3="-4,18.4809520823667" />
                   <mssgle:LineSegment
-                    End="-22.5,46.7999976456168" />
+                    End="-58.9999989916869,18.4809520823667" />
                   <mssgle:CubicBezierSegment
-                    Point1="-22.5,46.7999976456168"
-                    Point2="-22.5,50.7999976456168"
-                    Point3="-18.5,50.7999976456168" />
+                    Point1="-58.9999989916869,18.4809520823667"
+                    Point2="-62.9999989916869,18.4809520823667"
+                    Point3="-62.9999989916869,22.4809520823667" />
                   <mssgle:LineSegment
-                    End="3.49999983608737,50.7999976456168" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Derived Column Output]"
-          TopLeft="379.999994337559,108.400001598596">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0.83333308911898,53.9999960021176"
-              Start="0,0"
-              End="-6.66666691088102,53.9999960021176">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
-                  <mssgle:LineSegment
-                    End="-22.5,49.9999960021176" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,49.9999960021176"
-                    Point2="-22.5,53.9999960021176"
-                    Point3="-18.5,53.9999960021176" />
-                  <mssgle:LineSegment
-                    End="-6.66666691088102,53.9999960021176" />
+                    End="-62.9999989916869,29.4619041647335" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11670,24 +12073,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Data Flow Upload product\Script Component"
-          TopLeft="192.857132319894,273.619046542853" />
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Data Conversion Output]"
-          TopLeft="271.828564729435,249.599996900559">
+          Id="Package\Data Flow Upload product.Paths[1]"
+          TopLeft="233.833336710102,331.066662856076">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,24.0190496422937"
+              EndConnector="110.166658163899,31.228571398968"
               Start="0,0"
-              End="0,16.5190496422937">
+              End="102.666658163899,31.228571398968">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.5190496422937" />
+                    End="51.0833290819497,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.0833290819497,0"
+                    Point2="55.0833290819497,0"
+                    Point3="55.0833290819497,4" />
+                  <mssgle:LineSegment
+                    End="55.0833290819497,27.228571398968" />
+                  <mssgle:CubicBezierSegment
+                    Point1="55.0833290819497,27.228571398968"
+                    Point2="55.0833290819497,31.228571398968"
+                    Point3="59.0833290819497,31.228571398968" />
+                  <mssgle:LineSegment
+                    End="102.666658163899,31.228571398968" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11696,113 +12107,105 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Data Flow Upload product\Lookup"
+          TopLeft="200.833322360284,558.399999059836" />
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Output 0]"
-          TopLeft="273.657132319894,315.219046542853">
+          Id="Package\Data Flow Upload product.Paths[Sort Output2]"
+          TopLeft="399.71427833892,578.847616330111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="111.676195887441,26.276187712191"
+              EndConnector="-86.0809559786358,0"
               Start="0,0"
-              End="111.676195887441,18.776187712191">
+              End="-78.5809559786358,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.5582690401131" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.5582690401131"
-                    Point2="0,15.5582690401131"
-                    Point3="4,15.5582690401131" />
+                    End="-78.5809559786358,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Data Flow Upload product\OLE DB Destination"
+          TopLeft="44.9999975413085,646.799998445113" />
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Lookup No Match Output]"
+          TopLeft="239.766655693618,599.999999059836">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-109.166658152309,46.7999993852773"
+              Start="0,0"
+              End="-109.166658152309,39.2999993852773">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="107.676195887441,15.5582690401131" />
+                    End="0,15.1127270216797" />
                   <mssgle:CubicBezierSegment
-                    Point1="107.676195887441,15.5582690401131"
-                    Point2="111.676195887441,15.5582690401131"
-                    Point3="111.676195887441,19.5582690401131" />
+                    Point1="0,15.1127270216797"
+                    Point2="0,19.1127270216797"
+                    Point3="-4,19.1127270216797" />
                   <mssgle:LineSegment
-                    End="111.676195887441,18.776187712191" />
+                    End="-105.166658152309,19.1127270216797" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-105.166658152309,19.1127270216797"
+                    Point2="-109.166658152309,19.1127270216797"
+                    Point3="-109.166658152309,23.1127270216797" />
+                  <mssgle:LineSegment
+                    End="-109.166658152309,39.2999993852773" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="47.8380979437204,20.5582690401131,16,16"
+              BoundingBox="-119.258368138654,24.1127270216797,129.350078125,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Data Flow Upload product\Script Component 1"
-          TopLeft="390.476169141513,231.52380874034" />
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Data Conversion Output1]"
-          TopLeft="462.833327426678,183.199997600714">
+          Id="Package\Data Flow Upload product.Paths[Lookup Match Output]"
+          TopLeft="274.699989026951,599.999999059836">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="12.8428417148351,48.3238111396256"
+              EndConnector="129.399992806051,46.2666653046339"
               Start="0,0"
-              End="12.8428417148351,40.8238111396256">
+              End="129.399992806051,38.7666653046339">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.1619055698128" />
+                    End="0,14.8949178586757" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.1619055698128"
-                    Point2="0,24.1619055698128"
-                    Point3="4,24.1619055698128" />
+                    Point1="0,14.8949178586757"
+                    Point2="0,18.8949178586757"
+                    Point3="4,18.8949178586757" />
                   <mssgle:LineSegment
-                    End="8.84284171483506,24.1619055698128" />
+                    End="125.399992806051,18.8949178586757" />
                   <mssgle:CubicBezierSegment
-                    Point1="8.84284171483506,24.1619055698128"
-                    Point2="12.8428417148351,24.1619055698128"
-                    Point3="12.8428417148351,28.1619055698128" />
+                    Point1="125.399992806051,18.8949178586757"
+                    Point2="129.399992806051,18.8949178586757"
+                    Point3="129.399992806051,22.8949178586757" />
                   <mssgle:LineSegment
-                    End="12.8428417148351,40.8238111396256" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Output 01]"
-          TopLeft="475.676169141513,273.12380874034">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-53.0095076008454,68.3714255147041"
-              Start="0,0"
-              End="-53.0095076008454,60.8714255147041">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.4830808968642" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,36.4830808968642"
-                    Point2="0,40.4830808968642"
-                    Point3="-4,40.4830808968642" />
-                  <mssgle:LineSegment
-                    End="-49.0095076008454,40.4830808968642" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-49.0095076008454,40.4830808968642"
-                    Point2="-53.0095076008454,40.4830808968642"
-                    Point3="-53.0095076008454,44.4830808968642" />
-                  <mssgle:LineSegment
-                    End="-53.0095076008454,60.8714255147041" />
+                    End="129.399992806051,38.7666653046339" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-34.5047538004227,45.4830808968642,16,16"
+              BoundingBox="7.63995734052558,23.8949178586757,114.120078125,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11811,6 +12214,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Upload product\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Upload product\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[SAN_PHAM]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Upload product\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
