@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="235"
-  DTS:VersionGUID="{25D90F3B-6E15-4824-B615-DE00E9A58960}">
+  DTS:VersionBuild="238"
+  DTS:VersionGUID="{558F4E64-DBE4-41A8-8248-68C0CA4BC5CE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,11 +21,13 @@
       DTS:CreationName="OLEDB"
       DTS:DTSID="{CD272D7D-4F2C-4565-B4CF-79A7AEC76327}"
       DTS:ObjectName="LAPTOP-UL98AJFR\CSDLNHOM12">
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[$Project::server]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LAPTOP-UL98AJFR\CSDLNHOM12;User ID=;Initial Catalog=HQTCSDL_BTL;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Auto Translate=False;Initial File Name=;Trust Server Certificate=True;Server SPN=;Authentication=;Access Token=;Application Name=SSIS-Package-{CD272D7D-4F2C-4565-B4CF-79A7AEC76327}LAPTOP-UL98AJFR\CSDLNHOM12;" />
+          DTS:ConnectionString="Data Source=LAPTOP-UL98AJFR\CSDLNHOM12;Initial Catalog=HQTCSDL_BTL;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{CD272D7D-4F2C-4565-B4CF-79A7AEC76327}LAPTOP-UL98AJFR\CSDLNHOM12;Trust Server Certificate=True;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
