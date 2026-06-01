@@ -109,12 +109,9 @@ GO
 CREATE TABLE [dbo].[THANH_TOAN] (
 	[thanh_toan_id]	INT IDENTITY(1,1) PRIMARY KEY,
 	[don_hang_id] INT NOT NULL,
-	[ma_don] NVARCHAR(50),
 	[trang_thai] NVARCHAR(50) NOT NULL,
 	[phuong_thuc] NVARCHAR(100),
 	[tong_tien]	DECIMAL(18,2) NOT NULL,
-	[dia_chi_giao] NVARCHAR(255),
-	[ngay_dat] DATETIME NOT NULL DEFAULT GETDATE(),
 ) ON [PRIMARY]
 GO
 
