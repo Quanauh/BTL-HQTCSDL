@@ -2,18 +2,23 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>etl</Name>
-    <LastWriteTime>2026-05-31T08:54:48.8306888Z</LastWriteTime>
+    <LastWriteTime>2026-06-08T17:27:12.6386661Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2026-05-31T08:54:48.8018849Z</LastWriteTime>
+      <Name>upload.dtsx</Name>
+      <LastWriteTime>2026-06-08T16:31:57.836346Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>loadUserProductData.dtsx</Name>
-      <LastWriteTime>2026-05-31T08:39:58.0506035Z</LastWriteTime>
+      <Name>etlDW.dtsx</Name>
+      <LastWriteTime>2026-06-08T19:36:45.6379964Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>loadStaticDim.dtsx</Name>
+      <LastWriteTime>2026-06-08T16:15:05.4490232Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
