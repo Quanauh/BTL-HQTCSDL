@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="loadUserProductData"
   DTS:PackageType="5"
-  DTS:VersionBuild="59"
-  DTS:VersionGUID="{9F328035-71B0-4C27-ACEF-AB897F3E0421}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{9BD352B8-F51C-44CD-9FA9-095564546278}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,6 +21,8 @@
       DTS:CreationName="OLEDB"
       DTS:DTSID="{14FD2B46-E3F7-4522-AEE0-88EBD0A659E9}"
       DTS:ObjectName="LAPTOP-UL98AJFR\CSDLNHOM12.DW_HQTCSDL_BTL">
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[$Project::server]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
@@ -33,6 +35,8 @@
       DTS:CreationName="OLEDB"
       DTS:DTSID="{DDC464DE-58EA-4516-A168-985491B992BC}"
       DTS:ObjectName="LAPTOP-UL98AJFR\CSDLNHOM12.HQTCSDL_BTL">
+      <DTS:PropertyExpression
+        DTS:Name="ServerName">@[$Project::server]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
@@ -3483,6 +3487,100 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           version="1">
           <components>
             <component
+              refId="Package\load fact\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\load fact\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load fact\Conditional Split.Inputs[Conditional Split Input].Columns[StatusKey]"
+                      cachedDataType="i4"
+                      cachedName="StatusKey"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[StatusKey]" />
+                    <inputColumn
+                      refId="Package\load fact\Conditional Split.Inputs[Conditional Split Input].Columns[StatusKey1]"
+                      cachedDataType="i4"
+                      cachedName="StatusKey"
+                      lineageId="Package\load fact\Lookup.Outputs[Lookup Match Output].Columns[StatusKey]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load fact\Conditional Split.Outputs[Case 1]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Case 1"
+                  synchronousInputId="Package\load fact\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\load fact\Lookup.Outputs[Lookup Match Output].Columns[StatusKey]} != #{Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[StatusKey]}</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">Lookup.StatusKey != [Merge Join 5].StatusKey</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load fact\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\load fact\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load fact\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\load fact\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load fact\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load fact\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load fact\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load fact\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\load fact\Data Conversion"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -4813,7 +4911,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   expressionType="Notify"
                   name="SqlCommandParam"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[FACT_DON_HANG]) [refTable]
-where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTable].[StatusKey] = ? and [refTable].[DonHangID] = ?</property>
+where [refTable].[KhachHangKey] = ? and [refTable].[DonHangID] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -4828,7 +4926,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
                   name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">0</property>
+                  typeConverter="LookupNoMatchBehavior">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
@@ -4849,7 +4947,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[SanPhamKey]};#{Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[KhachHangKey]};#{Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[StatusKey]};#{Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[don_hang_id]};</property>
+                  name="ParameterMap">#{Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[KhachHangKey]};#{Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[don_hang_id]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4873,15 +4971,15 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\load fact\Lookup.Inputs[Lookup Input].Columns[SanPhamKey]"
+                      refId="Package\load fact\Lookup.Inputs[Lookup Input].Columns[don_hang_id]"
                       cachedDataType="i4"
-                      cachedName="SanPhamKey"
-                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[SanPhamKey]">
+                      cachedName="don_hang_id"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[don_hang_id]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">SanPhamKey</property>
+                          name="JoinToReferenceColumn">DonHangID</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -4904,38 +5002,6 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
                           name="CopyFromReferenceColumn" />
                       </properties>
                     </inputColumn>
-                    <inputColumn
-                      refId="Package\load fact\Lookup.Inputs[Lookup Input].Columns[StatusKey]"
-                      cachedDataType="i4"
-                      cachedName="StatusKey"
-                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[StatusKey]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">StatusKey</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\load fact\Lookup.Inputs[Lookup Input].Columns[don_hang_id]"
-                      cachedDataType="i4"
-                      cachedName="don_hang_id"
-                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[don_hang_id]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">DonHangID</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4944,7 +5010,6 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
                 <output
                   refId="Package\load fact\Lookup.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\load fact\Lookup.Inputs[Lookup Input]">
@@ -4961,6 +5026,34 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
                           dataType="System.String"
                           description="Specifies the column in the reference table from which a column is copied."
                           name="CopyFromReferenceColumn">DonHangID</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load fact\Lookup.Outputs[Lookup Match Output].Columns[KhachHangKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\load fact\Lookup.Outputs[Lookup Match Output].Columns[KhachHangKey]"
+                      name="KhachHangKey"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">KhachHangKey</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\load fact\Lookup.Outputs[Lookup Match Output].Columns[StatusKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\load fact\Lookup.Outputs[Lookup Match Output].Columns[StatusKey]"
+                      name="StatusKey"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">StatusKey</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -6393,6 +6486,334 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
                           name="InputColumnID">#{Package\load fact\Merge Join 5.Inputs[Merge Join Left Input].Columns[don_hang_id]}</property>
                       </properties>
                     </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load fact\OLE DB Command"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE FACT_DON_HANG 
+SET StatusKey = ? 
+WHERE DonHangID = ? AND SanPhamKey = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load fact\OLE DB Command.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-UL98AJFR\CSDLNHOM12.DW_HQTCSDL_BTL]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-UL98AJFR\CSDLNHOM12.DW_HQTCSDL_BTL]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input].Columns[StatusKey]"
+                      cachedDataType="i4"
+                      cachedName="StatusKey"
+                      externalMetadataColumnId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[StatusKey]" />
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input].Columns[don_hang_id]"
+                      cachedDataType="i4"
+                      cachedName="don_hang_id"
+                      externalMetadataColumnId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[don_hang_id]" />
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input].Columns[SanPhamKey]"
+                      cachedDataType="i4"
+                      cachedName="SanPhamKey"
+                      externalMetadataColumnId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[SanPhamKey]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="i4"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      dataType="i4"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load fact\OLE DB Command.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\load fact\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load fact\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load fact\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load fact\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load fact\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load fact\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FACT_DON_HANG]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load fact\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-UL98AJFR\CSDLNHOM12.DW_HQTCSDL_BTL]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-UL98AJFR\CSDLNHOM12.DW_HQTCSDL_BTL]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SanPhamKey]"
+                      cachedDataType="i4"
+                      cachedName="SanPhamKey"
+                      externalMetadataColumnId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SanPhamKey]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[SanPhamKey]" />
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[KhachHangKey]"
+                      cachedDataType="i4"
+                      cachedName="KhachHangKey"
+                      externalMetadataColumnId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KhachHangKey]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[KhachHangKey]" />
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TimeKey]"
+                      cachedDataType="i4"
+                      cachedName="TimeKey"
+                      externalMetadataColumnId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TimeKey]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[TimeKey]" />
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StatusKey]"
+                      cachedDataType="i4"
+                      cachedName="StatusKey"
+                      externalMetadataColumnId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatusKey]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[StatusKey]" />
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DiaChiKey]"
+                      cachedDataType="i4"
+                      cachedName="DiaChiKey"
+                      externalMetadataColumnId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DiaChiKey]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[DiaChiKey]" />
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[don_hang_id]"
+                      cachedDataType="i4"
+                      cachedName="don_hang_id"
+                      externalMetadataColumnId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DonHangID]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[don_hang_id]" />
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[don_gia]"
+                      cachedDataType="numeric"
+                      cachedName="don_gia"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DonGia]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[don_gia]" />
+                    <inputColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[so_luong]"
+                      cachedDataType="i4"
+                      cachedName="so_luong"
+                      externalMetadataColumnId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SoLuong]"
+                      lineageId="Package\load fact\Merge Join 5.Outputs[Merge Join Output].Columns[so_luong]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FactKey]"
+                      dataType="i8"
+                      name="FactKey" />
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DonHangID]"
+                      dataType="i4"
+                      name="DonHangID" />
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TimeKey]"
+                      dataType="i4"
+                      name="TimeKey" />
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatusKey]"
+                      dataType="i4"
+                      name="StatusKey" />
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SanPhamKey]"
+                      dataType="i4"
+                      name="SanPhamKey" />
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KhachHangKey]"
+                      dataType="i4"
+                      name="KhachHangKey" />
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DiaChiKey]"
+                      dataType="i4"
+                      name="DiaChiKey" />
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SoLuong]"
+                      dataType="i4"
+                      name="SoLuong" />
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DonGia]"
+                      dataType="numeric"
+                      name="DonGia"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DoanhThu]"
+                      dataType="numeric"
+                      name="DoanhThu"
+                      precision="29"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load fact\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load fact\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load fact\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load fact\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load fact\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -10042,105 +10463,115 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           </components>
           <paths>
             <path
+              refId="Package\load fact.Paths[Case 1]"
+              endId="Package\load fact\OLE DB Command.Inputs[OLE DB Command Input]"
+              name="Case 1"
+              startId="Package\load fact\Conditional Split.Outputs[Case 1]" />
+            <path
               refId="Package\load fact.Paths[Data Conversion Output]"
               endId="Package\load fact\Sort 6.Inputs[Sort Input]"
               name="Data Conversion Output"
               startId="Package\load fact\Data Conversion.Outputs[Data Conversion Output]" />
             <path
               refId="Package\load fact.Paths[Derived Column Output]"
-              endId="Package\load fact\Sort 8.Inputs[Sort Input]"
-              name="Derived Column Output"
-              startId="Package\load fact\Derived Column 1.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\load fact.Paths[Derived Column Output1]"
               endId="Package\load fact\Sort 2.Inputs[Sort Input]"
               name="Derived Column Output"
               startId="Package\load fact\Derived Column.Outputs[Derived Column Output]" />
             <path
-              refId="Package\load fact.Paths[Merge Join Output]"
-              endId="Package\load fact\Lookup.Inputs[Lookup Input]"
-              name="Merge Join Output"
-              startId="Package\load fact\Merge Join 5.Outputs[Merge Join Output]" />
+              refId="Package\load fact.Paths[Derived Column Output1]"
+              endId="Package\load fact\Sort 8.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\load fact\Derived Column 1.Outputs[Derived Column Output]" />
             <path
-              refId="Package\load fact.Paths[Merge Join Output1]"
+              refId="Package\load fact.Paths[Lookup Match Output]"
+              endId="Package\load fact\Conditional Split.Inputs[Conditional Split Input]"
+              name="Lookup Match Output"
+              startId="Package\load fact\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\load fact.Paths[Lookup No Match Output]"
+              endId="Package\load fact\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\load fact\Lookup.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\load fact.Paths[Merge Join Output]"
               endId="Package\load fact\Derived Column 1.Inputs[Derived Column Input]"
               name="Merge Join Output"
               startId="Package\load fact\Merge Join 4.Outputs[Merge Join Output]" />
             <path
-              refId="Package\load fact.Paths[Merge Join Output2]"
+              refId="Package\load fact.Paths[Merge Join Output1]"
               endId="Package\load fact\Derived Column.Inputs[Derived Column Input]"
               name="Merge Join Output"
               startId="Package\load fact\Merge Join.Outputs[Merge Join Output]" />
             <path
-              refId="Package\load fact.Paths[Merge Join Output3]"
+              refId="Package\load fact.Paths[Merge Join Output2]"
               endId="Package\load fact\Sort 10.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\load fact\Merge Join 3.Outputs[Merge Join Output]" />
             <path
-              refId="Package\load fact.Paths[Merge Join Output4]"
+              refId="Package\load fact.Paths[Merge Join Output3]"
               endId="Package\load fact\Sort 4.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\load fact\Merge Join 1.Outputs[Merge Join Output]" />
             <path
-              refId="Package\load fact.Paths[Merge Join Output5]"
+              refId="Package\load fact.Paths[Merge Join Output4]"
               endId="Package\load fact\Data Conversion.Inputs[Data Conversion Input]"
               name="Merge Join Output"
               startId="Package\load fact\Merge Join 2.Outputs[Merge Join Output]" />
             <path
-              refId="Package\load fact.Paths[OLE DB Source Output6]"
-              endId="Package\load fact\Sort 7.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\load fact\dim time.Outputs[OLE DB Source Output]" />
+              refId="Package\load fact.Paths[Merge Join Output5]"
+              endId="Package\load fact\Lookup.Inputs[Lookup Input]"
+              name="Merge Join Output"
+              startId="Package\load fact\Merge Join 5.Outputs[Merge Join Output]" />
             <path
-              refId="Package\load fact.Paths[OLE DB Source Output5]"
+              refId="Package\load fact.Paths[OLE DB Source Output6]"
               endId="Package\load fact\Sort 11.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\load fact\dim dia chi.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\load fact.Paths[OLE DB Source Output3]"
-              endId="Package\load fact\Sort 3.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\load fact\dim khach hang.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\load fact.Paths[OLE DB Source Output4]"
-              endId="Package\load fact\Sort 9.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\load fact\dim order status.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\load fact.Paths[OLE DB Source Output1]"
+              refId="Package\load fact.Paths[OLE DB Source Output5]"
               endId="Package\load fact\Sort 1.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\load fact\order detail.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\load fact.Paths[OLE DB Source Output]"
+              refId="Package\load fact.Paths[OLE DB Source Output4]"
+              endId="Package\load fact\Sort 3.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\load fact\dim khach hang.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\load fact.Paths[OLE DB Source Output3]"
               endId="Package\load fact\Sort.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\load fact\order.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\load fact.Paths[OLE DB Source Output2]"
+              endId="Package\load fact\Sort 7.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\load fact\dim time.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\load fact.Paths[OLE DB Source Output1]"
+              endId="Package\load fact\Sort 9.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\load fact\dim order status.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\load fact.Paths[OLE DB Source Output]"
               endId="Package\load fact\Sort 5.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\load fact\dim san pham.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\load fact.Paths[Sort Output10]"
-              endId="Package\load fact\Merge Join.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\load fact\Sort.Outputs[Sort Output]" />
-            <path
               refId="Package\load fact.Paths[Sort Output]"
-              endId="Package\load fact\Merge Join 5.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\load fact\Sort 11.Outputs[Sort Output]" />
-            <path
-              refId="Package\load fact.Paths[Sort Output1]"
-              endId="Package\load fact\Merge Join 2.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\load fact\Sort 5.Outputs[Sort Output]" />
-            <path
-              refId="Package\load fact.Paths[Sort Output2]"
               endId="Package\load fact\Merge Join 5.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\load fact\Sort 8.Outputs[Sort Output]" />
+            <path
+              refId="Package\load fact.Paths[Sort Output1]"
+              endId="Package\load fact\Merge Join 1.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\load fact\Sort 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\load fact.Paths[Sort Output2]"
+              endId="Package\load fact\Merge Join 2.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\load fact\Sort 5.Outputs[Sort Output]" />
             <path
               refId="Package\load fact.Paths[Sort Output3]"
               endId="Package\load fact\Merge Join 1.Inputs[Merge Join Right Input]"
@@ -10148,9 +10579,9 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
               startId="Package\load fact\Sort 3.Outputs[Sort Output]" />
             <path
               refId="Package\load fact.Paths[Sort Output4]"
-              endId="Package\load fact\Merge Join 3.Inputs[Merge Join Left Input]"
+              endId="Package\load fact\Merge Join 5.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\load fact\Sort 6.Outputs[Sort Output]" />
+              startId="Package\load fact\Sort 11.Outputs[Sort Output]" />
             <path
               refId="Package\load fact.Paths[Sort Output5]"
               endId="Package\load fact\Merge Join 3.Inputs[Merge Join Right Input]"
@@ -10158,24 +10589,29 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
               startId="Package\load fact\Sort 7.Outputs[Sort Output]" />
             <path
               refId="Package\load fact.Paths[Sort Output6]"
-              endId="Package\load fact\Merge Join 1.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\load fact\Sort 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\load fact.Paths[Sort Output7]"
               endId="Package\load fact\Merge Join 4.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\load fact\Sort 9.Outputs[Sort Output]" />
             <path
-              refId="Package\load fact.Paths[Sort Output8]"
+              refId="Package\load fact.Paths[Sort Output7]"
               endId="Package\load fact\Merge Join 4.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\load fact\Sort 10.Outputs[Sort Output]" />
             <path
-              refId="Package\load fact.Paths[Sort Output9]"
+              refId="Package\load fact.Paths[Sort Output8]"
               endId="Package\load fact\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\load fact\Sort 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\load fact.Paths[Sort Output9]"
+              endId="Package\load fact\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\load fact\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\load fact.Paths[Sort Output10]"
+              endId="Package\load fact\Merge Join 3.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\load fact\Sort 6.Outputs[Sort Output]" />
             <path
               refId="Package\load fact.Paths[Sort Output11]"
               endId="Package\load fact\Merge Join 2.Inputs[Merge Join Left Input]"
@@ -10215,33 +10651,21 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
         <NodeLayout
           Size="117.6,41.6"
           Id="Package\load fact"
-          TopLeft="173.333323862818,170.733332146075" />
+          TopLeft="148.333325228758,166.399998842875" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="202.133325501946,110.933332851198">
+          TopLeft="204.633325365352,110.933332851198">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="29.999998360872,59.799999294877"
+              EndConnector="0,55.4666659916772"
               Start="0,0"
-              End="29.999998360872,52.299999294877">
+              End="0,47.9666659916772">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.8999996474385" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.8999996474385"
-                    Point2="0,29.8999996474385"
-                    Point3="4,29.8999996474385" />
-                  <mssgle:LineSegment
-                    End="25.999998360872,29.8999996474385" />
-                  <mssgle:CubicBezierSegment
-                    Point1="25.999998360872,29.8999996474385"
-                    Point2="29.999998360872,29.8999996474385"
-                    Point3="29.999998360872,33.8999996474385" />
-                  <mssgle:LineSegment
-                    End="29.999998360872,52.299999294877" />
+                    End="0,47.9666659916772" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10357,9 +10781,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10393,9 +10815,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10429,9 +10849,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10465,9 +10883,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10489,9 +10905,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10525,9 +10939,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10561,9 +10973,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10723,36 +11133,20 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="106.4,41.6"
-          Id="Package\load fact\Sort 1"
-          TopLeft="315.999995291233,124.999998137355" />
-        <NodeLayout
-          Size="112,41.6"
-          Id="Package\load fact\Sort 11"
-          TopLeft="1276.19998657405,820.449994259328" />
-        <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\load fact\Merge Join 1"
-          TopLeft="506.999992445111,358.799995917082" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\load fact\Sort 9"
-          TopLeft="1108.19998943508,565.999996095896" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\load fact\Derived Column 1"
-          TopLeft="1078.59998997152,713.79999384582" />
-        <NodeLayout
-          Size="117.6,41.6"
-          Id="Package\load fact\dim time"
-          TopLeft="888.181804946878,364.90908870101" />
-        <NodeLayout
-          Size="102.4,41.6"
-          Id="Package\load fact\order"
-          TopLeft="139.999997913837,39.9999994039536" />
-        <NodeLayout
-          Size="106.4,41.6"
           Id="Package\load fact\Sort 7"
           TopLeft="906.727263908495,455.090907153758" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\load fact\Merge Join 3"
+          TopLeft="875.090898131783,568.72726866332" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\load fact\dim order status"
+          TopLeft="1068.19999003112,490.999997213483" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\load fact\Sort 8"
+          TopLeft="897.349992672354,725.149994833022" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\load fact\dim khach hang"
@@ -10762,263 +11156,103 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           Id="Package\load fact\Sort 3"
           TopLeft="515.999992311001,275.799997630715" />
         <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\load fact\Merge Join 3"
-          TopLeft="875.090898131783,568.72726866332" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\load fact\Sort"
-          TopLeft="157.999997645617,139.999997913837" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\load fact\Sort 5"
-          TopLeft="699.999989569187,355.199997019768" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\load fact\Merge Join"
-          TopLeft="258.999996140599,214.99999679625" />
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\load fact\dim order status"
-          TopLeft="1068.19999003112,490.999997213483" />
-        <NodeLayout
-          Size="128,41.6"
-          Id="Package\load fact\dim dia chi"
-          TopLeft="1264.03634883545,693.363629261201" />
+          Size="102.4,41.6"
+          Id="Package\load fact\order"
+          TopLeft="139.999997913837,39.9999994039536" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\load fact\Merge Join 5"
           TopLeft="883.449992426485,823.499994523823" />
         <NodeLayout
-          Size="112,41.6"
-          Id="Package\load fact\Sort 10"
-          TopLeft="886.199992743134,635.999995052814" />
+          Size="129.6,41.6"
+          Id="Package\load fact\Merge Join"
+          TopLeft="258.999996140599,214.99999679625" />
         <NodeLayout
           Size="106.4,41.6"
-          Id="Package\load fact\Sort 8"
-          TopLeft="897.349992672354,725.149994833022" />
+          Id="Package\load fact\Sort 5"
+          TopLeft="699.999989569187,355.199997019768" />
         <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\load fact\Lookup"
-          TopLeft="900.787022937274,894.972214340695" />
+          Size="128,41.6"
+          Id="Package\load fact\dim dia chi"
+          TopLeft="1264.03634883545,693.363629261201" />
         <NodeLayout
-          Size="143.2,41.6"
-          Id="Package\load fact\dim san pham"
-          TopLeft="699.999989569187,277.799996110797" />
+          Size="97.6,41.6"
+          Id="Package\load fact\Sort"
+          TopLeft="157.999997645617,139.999997913837" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\load fact\Merge Join 2"
           TopLeft="693.545444210822,455.199995529652" />
         <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\load fact\Sort 6"
-          TopLeft="723.090903008526,558.181813332168" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\load fact\Sort 2"
-          TopLeft="306.999995425344,356.799996364117" />
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\load fact\Derived Column"
-          TopLeft="257.999996155501,288.999995693564" />
+          Size="117.6,41.6"
+          Id="Package\load fact\dim time"
+          TopLeft="888.181804946878,364.90908870101" />
         <NodeLayout
           Size="130.4,41.6"
           Id="Package\load fact\order detail"
           TopLeft="313.999995321035,39.9999994039536" />
         <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\load fact\Derived Column 1"
+          TopLeft="1078.59998997152,713.79999384582" />
+        <NodeLayout
+          Size="143.2,41.6"
+          Id="Package\load fact\dim san pham"
+          TopLeft="699.999989569187,277.799996110797" />
+        <NodeLayout
+          Size="112,41.6"
+          Id="Package\load fact\Sort 10"
+          TopLeft="886.199992743134,635.999995052814" />
+        <NodeLayout
           Size="138.4,41.6"
           Id="Package\load fact\Merge Join 4"
           TopLeft="1080.19998985231,632.999995097518" />
         <NodeLayout
-          Size="156,41.6"
-          Id="Package\load fact\Data Conversion"
-          TopLeft="542.363630362532,525.454542013732" />
+          Size="106.4,41.6"
+          Id="Package\load fact\Sort 6"
+          TopLeft="714.757570130506,576.598479870768" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\load fact\Derived Column"
+          TopLeft="257.999996155501,288.999995693564" />
         <NodeLayout
           Size="106.4,41.6"
           Id="Package\load fact\Sort 4"
           TopLeft="522.999992206693,427.399994918704" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\load fact\Sort 2"
+          TopLeft="306.999995425344,356.799996364117" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\load fact\Data Conversion"
+          TopLeft="671.530289971844,511.371208778332" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\load fact\Sort 9"
+          TopLeft="1093.19999025464,559.066662810776" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\load fact\OLE DB Destination"
+          TopLeft="857.925903868529,1012.51851634221" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\load fact\Merge Join 1"
+          TopLeft="506.999992445111,358.799995917082" />
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\load fact\OLE DB Command"
+          TopLeft="1088.48144682708,1009.0370350951" />
+        <NodeLayout
+          Size="112,41.6"
+          Id="Package\load fact\Sort 11"
+          TopLeft="1276.19998657405,820.449994259328" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\load fact\Sort 1"
+          TopLeft="315.999995291233,124.999998137355" />
         <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output11]"
-          TopLeft="629.399992206693,448.199994918704">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="64.1454520041295,27.8000006109476"
-              Start="0,0"
-              End="56.6454520041295,27.8000006109476">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="28.0727260020648,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="28.0727260020648,0"
-                    Point2="32.0727260020648,0"
-                    Point3="32.0727260020648,4" />
-                  <mssgle:LineSegment
-                    End="32.0727260020648,23.8000006109476" />
-                  <mssgle:CubicBezierSegment
-                    Point1="32.0727260020648,23.8000006109476"
-                    Point2="32.0727260020648,27.8000006109476"
-                    Point3="36.0727260020648,27.8000006109476" />
-                  <mssgle:LineSegment
-                    End="56.6454520041295,27.8000006109476" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output]"
-          TopLeft="1276.19998657405,842.774994391575">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-254.349994147569,0"
-              Start="0,0"
-              End="-246.849994147569,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-246.849994147569,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output10]"
-          TopLeft="206.799997645617,181.599997913837">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="96.7333318283161,33.3999988824129"
-              Start="0,0"
-              End="96.7333318283161,25.8999988824129">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.7956090937227" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.7956090937227"
-                    Point2="0,19.7956090937227"
-                    Point3="4,19.7956090937227" />
-                  <mssgle:LineSegment
-                    End="92.7333318283161,19.7956090937227" />
-                  <mssgle:CubicBezierSegment
-                    Point1="92.7333318283161,19.7956090937227"
-                    Point2="96.7333318283161,19.7956090937227"
-                    Point3="96.7333318283161,23.7956090937227" />
-                  <mssgle:LineSegment
-                    End="96.7333318283161,25.8999988824129" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output9]"
-          TopLeft="369.199995291233,166.599998137355">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-25.133332483967,48.3999986588954"
-              Start="0,0"
-              End="-25.133332483967,40.8999986588954">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.6858528636868" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.6858528636868"
-                    Point2="0,28.6858528636868"
-                    Point3="-4,28.6858528636868" />
-                  <mssgle:LineSegment
-                    End="-21.133332483967,28.6858528636868" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-21.133332483967,28.6858528636868"
-                    Point2="-25.133332483967,28.6858528636868"
-                    Point3="-25.133332483967,32.6858528636868" />
-                  <mssgle:LineSegment
-                    End="-25.133332483967,40.8999986588954" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output8]"
-          TopLeft="998.199992743134,655.299995075166">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="81.9999971091753,0"
-              Start="0,0"
-              End="74.4999971091753,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="74.4999971091753,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output7]"
-          TopLeft="1161.39998943508,607.599996095896">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-11.9999995827675,25.3999990016222"
-              Start="0,0"
-              End="-11.9999995827675,17.8999990016222">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,8.69999950081109" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,8.69999950081109"
-                    Point2="0,12.6999995008111"
-                    Point3="-4,12.6999995008111" />
-                  <mssgle:LineSegment
-                    End="-7.99999958276749,12.6999995008111" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7.99999958276749,12.6999995008111"
-                    Point2="-11.9999995827675,12.6999995008111"
-                    Point3="-11.9999995827675,16.6999995008111" />
-                  <mssgle:LineSegment
-                    End="-11.9999995827675,17.8999990016222" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output6]"
+          Id="Package\load fact.Paths[Sort Output1]"
           TopLeft="413.399995425343,378.599996140599">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11031,6 +11265,108 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
                   Capacity="5">
                   <mssgle:LineSegment
                     End="86.099997019768,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Sort Output2]"
+          TopLeft="753.199989569187,396.799997019768">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.54545464163493,58.3999985098839"
+              Start="0,0"
+              End="9.54545464163493,50.8999985098839">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.199999254942" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.199999254942"
+                    Point2="0,29.199999254942"
+                    Point3="4,29.199999254942" />
+                  <mssgle:LineSegment
+                    End="5.54545464163493,29.199999254942" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.54545464163493,29.199999254942"
+                    Point2="9.54545464163493,29.199999254942"
+                    Point3="9.54545464163493,33.199999254942" />
+                  <mssgle:LineSegment
+                    End="9.54545464163493,50.8999985098839" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Sort Output]"
+          TopLeft="951.59999254942,766.749994833022">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.7499996908008"
+              Start="0,0"
+              End="0,49.2499996908008">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.2499996908008" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,16.6249998454004,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Sort Output3]"
+          TopLeft="572.699992378056,317.399997630715">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.3999982863664"
+              Start="0,0"
+              End="0,33.8999982863664">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.8999982863664" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Sort Output10]"
+          TopLeft="821.157570130506,593.462874267044">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="53.9333280012773,0"
+              Start="0,0"
+              End="46.4333280012773,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="46.4333280012773,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11074,31 +11410,131 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\load fact.Paths[Sort Output6]"
+          TopLeft="1147.89999005348,600.666662810776">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.3333322867418"
+              Start="0,0"
+              End="0,24.8333322867418">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.8333322867418" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Sort Output7]"
+          TopLeft="998.199992743134,655.299995075166">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81.9999971091753,0"
+              Start="0,0"
+              End="74.4999971091753,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="74.4999971091753,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Sort Output8]"
+          TopLeft="369.199995291233,166.599998137355">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-25.133332483967,48.3999986588954"
+              Start="0,0"
+              End="-25.133332483967,40.8999986588954">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.6858528636868" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.6858528636868"
+                    Point2="0,28.6858528636868"
+                    Point3="-4,28.6858528636868" />
+                  <mssgle:LineSegment
+                    End="-21.133332483967,28.6858528636868" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-21.133332483967,28.6858528636868"
+                    Point2="-25.133332483967,28.6858528636868"
+                    Point3="-25.133332483967,32.6858528636868" />
+                  <mssgle:LineSegment
+                    End="-25.133332483967,40.8999986588954" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Sort Output9]"
+          TopLeft="206.799997645617,181.599997913837">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96.7333318283161,33.3999988824129"
+              Start="0,0"
+              End="96.7333318283161,25.8999988824129">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.7956090937227" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.7956090937227"
+                    Point2="0,19.7956090937227"
+                    Point3="4,19.7956090937227" />
+                  <mssgle:LineSegment
+                    End="92.7333318283161,19.7956090937227" />
+                  <mssgle:CubicBezierSegment
+                    Point1="92.7333318283161,19.7956090937227"
+                    Point2="96.7333318283161,19.7956090937227"
+                    Point3="96.7333318283161,23.7956090937227" />
+                  <mssgle:LineSegment
+                    End="96.7333318283161,25.8999988824129" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\load fact.Paths[Sort Output4]"
-          TopLeft="829.490903008526,578.981813332167">
+          TopLeft="1276.19998657405,842.774994391575">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="45.5999951232565,10.5454553311523"
+              EndConnector="-254.349994147569,0"
               Start="0,0"
-              End="38.0999951232565,10.5454553311523">
+              End="-246.849994147569,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="18.7999975616282,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.7999975616282,0"
-                    Point2="22.7999975616282,0"
-                    Point3="22.7999975616282,4" />
-                  <mssgle:LineSegment
-                    End="22.7999975616282,6.54545533115231" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.7999975616282,6.54545533115231"
-                    Point2="22.7999975616282,10.5454553311523"
-                    Point3="26.7999975616282,10.5454553311523" />
-                  <mssgle:LineSegment
-                    End="38.0999951232565,10.5454553311523" />
+                    End="-246.849994147569,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11108,77 +11544,31 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output3]"
-          TopLeft="572.699992378056,317.399997630715">
+          Id="Package\load fact.Paths[Sort Output11]"
+          TopLeft="629.399992206693,448.199994918704">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41.3999982863664"
+              EndConnector="64.1454520041295,27.8000006109476"
               Start="0,0"
-              End="0,33.8999982863664">
+              End="56.6454520041295,27.8000006109476">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.8999982863664" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output2]"
-          TopLeft="951.59999254942,766.749994833022">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56.7499996908008"
-              Start="0,0"
-              End="0,49.2499996908008">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.2499996908008" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8,16.6249998454004,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Sort Output1]"
-          TopLeft="753.199989569187,396.799997019768">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="9.54545464163493,58.3999985098839"
-              Start="0,0"
-              End="9.54545464163493,50.8999985098839">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.199999254942" />
+                    End="28.0727260020648,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25.199999254942"
-                    Point2="0,29.199999254942"
-                    Point3="4,29.199999254942" />
+                    Point1="28.0727260020648,0"
+                    Point2="32.0727260020648,0"
+                    Point3="32.0727260020648,4" />
                   <mssgle:LineSegment
-                    End="5.54545464163493,29.199999254942" />
+                    End="32.0727260020648,23.8000006109476" />
                   <mssgle:CubicBezierSegment
-                    Point1="5.54545464163493,29.199999254942"
-                    Point2="9.54545464163493,29.199999254942"
-                    Point3="9.54545464163493,33.199999254942" />
+                    Point1="32.0727260020648,23.8000006109476"
+                    Point2="32.0727260020648,27.8000006109476"
+                    Point3="36.0727260020648,27.8000006109476" />
                   <mssgle:LineSegment
-                    End="9.54545464163493,50.8999985098839" />
+                    End="56.6454520041295,27.8000006109476" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11189,108 +11579,6 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
         </EdgeLayout>
         <EdgeLayout
           Id="Package\load fact.Paths[OLE DB Source Output]"
-          TopLeft="191.199997913837,81.5999994039536">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="15.5999997317791,58.3999985098839"
-              Start="0,0"
-              End="15.5999997317791,50.8999985098839">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.1999992549419" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.1999992549419"
-                    Point2="0,29.1999992549419"
-                    Point3="4,29.1999992549419" />
-                  <mssgle:LineSegment
-                    End="11.5999997317791,29.1999992549419" />
-                  <mssgle:CubicBezierSegment
-                    Point1="11.5999997317791,29.1999992549419"
-                    Point2="15.5999997317791,29.1999992549419"
-                    Point3="15.5999997317791,33.1999992549419" />
-                  <mssgle:LineSegment
-                    End="15.5999997317791,50.8999985098839" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[OLE DB Source Output1]"
-          TopLeft="379.199995321035,81.5999994039536">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-10.0000000298025,43.3999987334013"
-              Start="0,0"
-              End="-10.0000000298025,35.8999987334013">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.6999993667007" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.6999993667007"
-                    Point2="0,21.6999993667007"
-                    Point3="-4,21.6999993667007" />
-                  <mssgle:LineSegment
-                    End="-6.00000002980249,21.6999993667007" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-6.00000002980249,21.6999993667007"
-                    Point2="-10.0000000298025,21.6999993667007"
-                    Point3="-10.0000000298025,25.6999993667007" />
-                  <mssgle:LineSegment
-                    End="-10.0000000298025,35.8999987334013" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[OLE DB Source Output3]"
-          TopLeft="560.999992772937,246.399997198582">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="8.19999953806416,29.4000004321336"
-              Start="0,0"
-              End="8.19999953806416,21.9000004321336">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,10.7000002160668" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.7000002160668"
-                    Point2="0,14.7000002160668"
-                    Point3="4,14.7000002160668" />
-                  <mssgle:LineSegment
-                    End="4.19999953806416,14.7000002160668" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.19999953806416,14.7000002160668"
-                    Point2="8.19999953806416,14.7000002160668"
-                    Point3="8.19999953806416,18.7000002160668" />
-                  <mssgle:LineSegment
-                    End="8.19999953806416,21.9000004321336" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[OLE DB Source Output2]"
           TopLeft="771.599989569187,319.399996110797">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11325,6 +11613,50 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
         </EdgeLayout>
         <EdgeLayout
           Id="Package\load fact.Paths[OLE DB Source Output6]"
+          TopLeft="1330.11816770475,734.963629261201">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,85.4863649981264"
+              Start="0,0"
+              End="0,77.9863649981264">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.9863649981264" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[OLE DB Source Output1]"
+          TopLeft="1145.49999014288,532.599997213483">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.4666655972932"
+              Start="0,0"
+              End="0,18.9666655972932">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.9666655972932" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[OLE DB Source Output2]"
           TopLeft="946.981804946878,406.50908870101">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11358,31 +11690,65 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\load fact.Paths[OLE DB Source Output4]"
-          TopLeft="1144.59999003112,532.599997213483">
+          Id="Package\load fact.Paths[OLE DB Source Output3]"
+          TopLeft="191.199997913837,81.5999994039536">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="16.7999994039535,33.3999988824129"
+              EndConnector="15.59999973178,58.3999985098834"
               Start="0,0"
-              End="16.7999994039535,25.8999988824129">
+              End="15.59999973178,50.8999985098834">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.6999994412064" />
+                    End="0,25.1999992549417" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,12.6999994412064"
-                    Point2="0,16.6999994412064"
-                    Point3="4,16.6999994412064" />
+                    Point1="0,25.1999992549417"
+                    Point2="0,29.1999992549417"
+                    Point3="4,29.1999992549417" />
                   <mssgle:LineSegment
-                    End="12.7999994039535,16.6999994412064" />
+                    End="11.59999973178,29.1999992549417" />
                   <mssgle:CubicBezierSegment
-                    Point1="12.7999994039535,16.6999994412064"
-                    Point2="16.7999994039535,16.6999994412064"
-                    Point3="16.7999994039535,20.6999994412064" />
+                    Point1="11.59999973178,29.1999992549417"
+                    Point2="15.59999973178,29.1999992549417"
+                    Point3="15.59999973178,33.1999992549417" />
                   <mssgle:LineSegment
-                    End="16.7999994039535,25.8999988824129" />
+                    End="15.59999973178,50.8999985098834" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[OLE DB Source Output4]"
+          TopLeft="560.999992772937,246.399997198582">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.19999953806416,29.4000004321336"
+              Start="0,0"
+              End="8.19999953806416,21.9000004321336">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.7000002160668" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.7000002160668"
+                    Point2="0,14.7000002160668"
+                    Point3="4,14.7000002160668" />
+                  <mssgle:LineSegment
+                    End="4.19999953806416,14.7000002160668" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.19999953806416,14.7000002160668"
+                    Point2="8.19999953806416,14.7000002160668"
+                    Point3="8.19999953806416,18.7000002160668" />
+                  <mssgle:LineSegment
+                    End="8.19999953806416,21.9000004321336" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11393,52 +11759,30 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
         </EdgeLayout>
         <EdgeLayout
           Id="Package\load fact.Paths[OLE DB Source Output5]"
-          TopLeft="1330.11816770475,734.963629261201">
+          TopLeft="379.199995321035,81.5999994039536">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,85.4863649981264"
+              EndConnector="-10.0000000298025,43.3999987334013"
               Start="0,0"
-              End="0,77.9863649981264">
+              End="-10.0000000298025,35.8999987334013">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,77.9863649981264" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Merge Join Output5]"
-          TopLeft="762.745444210822,496.799995529652">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-142.38181384829,28.6545464840802"
-              Start="0,0"
-              End="-142.38181384829,21.1545464840802">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,10.3272732420401" />
+                    End="0,17.6999993667007" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10.3272732420401"
-                    Point2="0,14.3272732420401"
-                    Point3="-4,14.3272732420401" />
+                    Point1="0,17.6999993667007"
+                    Point2="0,21.6999993667007"
+                    Point3="-4,21.6999993667007" />
                   <mssgle:LineSegment
-                    End="-138.38181384829,14.3272732420401" />
+                    End="-6.00000002980249,21.6999993667007" />
                   <mssgle:CubicBezierSegment
-                    Point1="-138.38181384829,14.3272732420401"
-                    Point2="-142.38181384829,14.3272732420401"
-                    Point3="-142.38181384829,18.3272732420401" />
+                    Point1="-6.00000002980249,21.6999993667007"
+                    Point2="-10.0000000298025,21.6999993667007"
+                    Point3="-10.0000000298025,25.6999993667007" />
                   <mssgle:LineSegment
-                    End="-142.38181384829,21.1545464840802" />
+                    End="-10.0000000298025,35.8999987334013" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11449,6 +11793,40 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
         </EdgeLayout>
         <EdgeLayout
           Id="Package\load fact.Paths[Merge Join Output4]"
+          TopLeft="831.945444210822,475.999995529652">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-4.4151542389784,56.1712132486801"
+              Start="0,0"
+              End="3.0848457610216,56.1712132486801">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,0"
+                    Point2="22.5,0"
+                    Point3="22.5,4" />
+                  <mssgle:LineSegment
+                    End="22.5,52.1712132486801" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5,52.1712132486801"
+                    Point2="22.5,56.1712132486801"
+                    Point3="18.5,56.1712132486801" />
+                  <mssgle:LineSegment
+                    End="3.0848457610216,56.1712132486801" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Merge Join Output3]"
           TopLeft="576.199992325902,400.399995917082">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11470,7 +11848,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\load fact.Paths[Merge Join Output3]"
+          Id="Package\load fact.Paths[Merge Join Output2]"
           TopLeft="943.245445437459,610.32726866332">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11492,7 +11870,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\load fact.Paths[Merge Join Output2]"
+          Id="Package\load fact.Paths[Merge Join Output1]"
           TopLeft="323.799996140599,256.59999679625">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11526,7 +11904,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\load fact.Paths[Merge Join Output1]"
+          Id="Package\load fact.Paths[Merge Join Output]"
           TopLeft="1149.39998985231,674.599995097518">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11560,31 +11938,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\load fact.Paths[Merge Join Output]"
-          TopLeft="954.918507681879,865.099994523823">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,29.872219816872"
-              Start="0,0"
-              End="0,22.372219816872">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.372219816872" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8,3.18610990843598,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\load fact.Paths[Derived Column Output1]"
+          Id="Package\load fact.Paths[Derived Column Output]"
           TopLeft="334.399996155501,330.599995693564">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11618,7 +11972,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\load fact.Paths[Derived Column Output]"
+          Id="Package\load fact.Paths[Derived Column Output1]"
           TopLeft="1078.59998997152,734.59999384582">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11648,37 +12002,35 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-45.4249986495822,-22,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\load fact.Paths[Data Conversion Output]"
-          TopLeft="698.363630362532,546.254542013732">
+          TopLeft="749.530289971844,552.971208778332">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="24.7272726459938,32.7272713184356"
+              EndConnector="18.4272801586621,23.6272710924354"
               Start="0,0"
-              End="17.2272726459938,32.7272713184356">
+              End="18.4272801586621,16.1272710924354">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="8.36363632299691,0" />
+                    End="0,7.81363554621771" />
                   <mssgle:CubicBezierSegment
-                    Point1="8.36363632299691,0"
-                    Point2="12.3636363229969,0"
-                    Point3="12.3636363229969,4" />
+                    Point1="0,7.81363554621771"
+                    Point2="0,11.8136355462177"
+                    Point3="4,11.8136355462177" />
                   <mssgle:LineSegment
-                    End="12.3636363229969,28.7272713184356" />
+                    End="14.4272801586621,11.8136355462177" />
                   <mssgle:CubicBezierSegment
-                    Point1="12.3636363229969,28.7272713184356"
-                    Point2="12.3636363229969,32.7272713184356"
-                    Point3="16.3636363229969,32.7272713184356" />
+                    Point1="14.4272801586621,11.8136355462177"
+                    Point2="18.4272801586621,11.8136355462177"
+                    Point3="18.4272801586621,15.8136355462177" />
                   <mssgle:LineSegment
-                    End="17.2272726459938,32.7272713184356" />
+                    End="18.4272801586621,16.1272710924354" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11687,24 +12039,137 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\load fact\Lookup"
+          TopLeft="881.791636900564,912.999998734395" />
+        <EdgeLayout
+          Id="Package\load fact.Paths[Merge Join Output5]"
+          TopLeft="952.649992426485,865.099994523823">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-14.4583555259214,47.9000042105715"
+              Start="0,0"
+              End="-14.4583555259214,40.4000042105715">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.9500021052858" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.9500021052858"
+                    Point2="0,23.9500021052858"
+                    Point3="-4,23.9500021052858" />
+                  <mssgle:LineSegment
+                    End="-10.4583555259214,23.9500021052858" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10.4583555259214,23.9500021052858"
+                    Point2="-14.4583555259214,23.9500021052858"
+                    Point3="-14.4583555259214,27.9500021052858" />
+                  <mssgle:LineSegment
+                    End="-14.4583555259214,40.4000042105715" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Lookup No Match Output]"
+          TopLeft="940.858770384546,954.599998734395">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57.9185176078154"
+              Start="0,0"
+              End="0,50.4185176078154">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.4185176078154" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,19.4045713039077,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\load fact\Conditional Split"
+          TopLeft="1072.41662648527,915.166665385995" />
+        <EdgeLayout
+          Id="Package\load fact.Paths[Lookup Match Output]"
+          TopLeft="994.591636900564,934.883332060195">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77.8249895847098,0"
+              Start="0,0"
+              End="70.3249895847098,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="70.3249895847098,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-13.0288919263951,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\load fact.Paths[Case 1]"
+          TopLeft="1149.21662648527,956.766665385995">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.8648203418065,52.2703697091055"
+              Start="0,0"
+              End="22.8648203418065,44.7703697091055">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.1351848545527" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.1351848545527"
+                    Point2="0,26.1351848545527"
+                    Point3="4,26.1351848545527" />
+                  <mssgle:LineSegment
+                    End="18.8648203418065,26.1351848545527" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.8648203418065,26.1351848545527"
+                    Point2="22.8648203418065,26.1351848545527"
+                    Point3="22.8648203418065,30.1351848545527" />
+                  <mssgle:LineSegment
+                    End="22.8648203418065,44.7703697091055" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-3.78567576659673,31.1351848545527,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\load fact\dim time">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\load fact\order">
+    design-time-name="Package\load fact\dim order status">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11730,7 +12195,7 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\load fact\dim order status">
+    design-time-name="Package\load fact\order">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11744,6 +12209,58 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\load fact\dim dia chi">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\load fact\dim time">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\load fact\order detail">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\load fact\dim san pham">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\load fact\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11775,32 +12292,6 @@ where [refTable].[SanPhamKey] = ? and [refTable].[KhachHangKey] = ? and [refTabl
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\load fact\dim san pham">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\load fact\order detail">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LAPTOP-UL98AJFR</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwas9W3dIhUmhLqPLtovN+wAAAAACAAAAAAAQZgAAAAEAACAAAAC9yKbyMDdmmvFRV6rd6iq4IvFdZVVVNz9QIznTPODDeQAAAAAOgAAAAAIAACAAAACGM+sf/cDFooUrL3C7fpPjlGshPb3Aj8JnRIboFo4wP5AAAADYL1ACuAkUIj4R2RH30G8y+1p/qGiIcf6KcDXaJFJevycAPzGyTTfKZgx0SlN/GzdMvQyan4r+qA596n3P7njrRhKAvlPTkqC95bIb/UVjFQ31fkLZ5C9x3P7EaFyUqm6HuJM7noPNn6wsGv6rLEyDWSsEX4TEFLU/SfGVgzWWriwI85XLopC5NIPUxqhf8P9AAAAA3Dqxeaha6VhA6nmkCM/12b1UcJ7knCQZ1R/XenfRBIk154Iw7J/uwuSz9Gh5AFwbOfgrF20gBjuIdpxZsZGbMQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwas9W3dIhUmhLqPLtovN+wAAAAACAAAAAAAQZgAAAAEAACAAAACBVtX19L2Nc2fDBN0sZigvqCsFjAFTWyrkVvKRdvZZNQAAAAAOgAAAAAIAACAAAACDvr6WLbPu9aBatypBH+vF1Ksj7ACyMlB8petIatHw+ZAAAADwCtIwbD1JvmIt4pCQAnJ06kqh54Ea44DbaciRwjYbKseTi4KBMo2G9nX5b+i9Iln+cB1SpN/yFgCbBrcnLZda//fnJM446mLSfNouu1loUsRs91o+EQpAJDb//JPQZu6gaJHNICe5k1gHJzLTvN40jxj/nP7PPTh1zU3lGK+elG2moeiLdpxEmZVhLnVnqCVAAAAAkug1pQUbHpfCdAtFyNqW3GpstcsKFNEVVrhPSsrXnA4pMy5ow/bxX8cU1yis2v0oiJ/alxcibDw/2gkl/0Rsbw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -44,10 +44,10 @@
                 <SSIS:Property SSIS:Name="Name">upload</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">245</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">247</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{BEF16384-16E5-4505-91CD-FC24D9E66771}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{8682905C-FE9C-40CB-9473-F0B1A5CFDBF8}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -80,7 +80,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=LAPTOP-UL98AJFR\CSDLNHOM12;Initial Catalog=HQTCSDL_BTL;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{CD272D7D-4F2C-4565-B4CF-79A7AEC76327}LAPTOP-UL98AJFR\CSDLNHOM12;Trust Server Certificate=True;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=LAPTOP-UL98AJFR\CSDLNHOM12;User ID=;Initial Catalog=HQTCSDL_BTL;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{CD272D7D-4F2C-4565-B4CF-79A7AEC76327}LAPTOP-UL98AJFR\CSDLNHOM12;Initial File Name=;Trust Server Certificate=True;Server SPN=;Authentication=;Access Token=;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -750,10 +750,10 @@
                 <SSIS:Property SSIS:Name="Name">loadUserProductData</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">59</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">76</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9F328035-71B0-4C27-ACEF-AB897F3E0421}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{9BD352B8-F51C-44CD-9FA9-095564546278}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -877,21 +877,6 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LAPTOP-UL98AJFR\CSDLNHOM12.DW_HQTCSDL_BTL.ServerName">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">LAPTOP-UL98AJFR\CSDLNHOM12</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.LAPTOP-UL98AJFR\CSDLNHOM12.DW_HQTCSDL_BTL.UserName">
@@ -1029,21 +1014,6 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LAPTOP-UL98AJFR\CSDLNHOM12.HQTCSDL_BTL.ServerName">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">LAPTOP-UL98AJFR\CSDLNHOM12</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.LAPTOP-UL98AJFR\CSDLNHOM12.HQTCSDL_BTL.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -1068,10 +1038,10 @@
                 <SSIS:Property SSIS:Name="Name">loadStaticDim</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">22</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">29</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{D0732737-2719-444D-B3DB-66EB2E8DBD46}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{540D3AE4-5A26-4B21-B5DC-FCFCFA7E8C5A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1223,21 +1193,6 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LAPTOP-UL98AJFR\CSDLNHOM12.DW_HQTCSDL_BTL.ServerName">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">LAPTOP-UL98AJFR\CSDLNHOM12</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.LAPTOP-UL98AJFR\CSDLNHOM12.DW_HQTCSDL_BTL.UserName">

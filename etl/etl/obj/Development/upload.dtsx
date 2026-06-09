@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="upload"
   DTS:PackageType="5"
-  DTS:VersionBuild="245"
-  DTS:VersionGUID="{BEF16384-16E5-4505-91CD-FC24D9E66771}">
+  DTS:VersionBuild="247"
+  DTS:VersionGUID="{8682905C-FE9C-40CB-9473-F0B1A5CFDBF8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LAPTOP-UL98AJFR\CSDLNHOM12;Initial Catalog=HQTCSDL_BTL;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{CD272D7D-4F2C-4565-B4CF-79A7AEC76327}LAPTOP-UL98AJFR\CSDLNHOM12;Trust Server Certificate=True;" />
+          DTS:ConnectionString="Data Source=LAPTOP-UL98AJFR\CSDLNHOM12;User ID=;Initial Catalog=HQTCSDL_BTL;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{CD272D7D-4F2C-4565-B4CF-79A7AEC76327}LAPTOP-UL98AJFR\CSDLNHOM12;Initial File Name=;Trust Server Certificate=True;Server SPN=;Authentication=;Access Token=;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -10614,14 +10614,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               startId="Package\Data Flow Upload product\Derived Column 1.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Flat File Source Output1]"
-              endId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input]"
-              name="Flat File Source Output"
-              startId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output]" />
-            <path
-              refId="Package\Data Flow Upload product.Paths[Flat File Source Output]"
               endId="Package\Data Flow Upload product\Conditional Split.Inputs[Conditional Split Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Upload product.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Lookup No Match Output]"
               endId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input]"
@@ -10649,19 +10649,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               startId="Package\Data Flow Upload product\Script Component 1.Outputs[Output 0]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Sort Output2]"
+              endId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Upload product.Paths[Sort Output]"
               endId="Package\Data Flow Upload product\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Data Flow Upload product\Sort 1.Outputs[Sort Output]" />
             <path
-              refId="Package\Data Flow Upload product.Paths[Sort Output]"
+              refId="Package\Data Flow Upload product.Paths[Sort Output1]"
               endId="Package\Data Flow Upload product\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Data Flow Upload product\Sort.Outputs[Sort Output]" />
-            <path
-              refId="Package\Data Flow Upload product.Paths[Sort Output1]"
-              endId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]"
-              name="Sort Output"
-              startId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Union All Output 1]"
               endId="Package\Data Flow Upload product\Sort.Inputs[Sort Input]"
@@ -11755,13 +11755,65 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Data Flow Upload product\Merge Join"
-          TopLeft="719.619033016856,414.485708930237" />
+          Size="164,41.6"
+          Id="Package\Data Flow Upload product\Data Conversion 1"
+          TopLeft="384.999993865688,262.933330090311" />
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Data Flow Upload product\OLE DB Source"
+          TopLeft="685.619033523496,221.285711165411" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Data Flow Upload product\Derived Column 1"
+          TopLeft="379.999994337559,87.6000015985964" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Data Flow Upload product\Conditional Split 2"
+          TopLeft="165.299994946023,270.799998951356" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Data Flow Upload product\Union All"
+          TopLeft="343.999994874001,341.495234255044" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Data Flow Upload product\Lookup"
+          TopLeft="200.833322360284,558.399999059836" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Data Flow Upload product\Flat File Source"
+          TopLeft="171.999997437,30.999999538064" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Data Flow Upload product\Script Component"
+          TopLeft="167.023800398031,214.685713619335" />
         <NodeLayout
           Size="106.4,41.6"
           Id="Package\Data Flow Upload product\Sort 1"
           TopLeft="811.619031645949,317.485710196835" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Data Flow Upload product\Merge Join"
+          TopLeft="719.619033016856,414.485708930237" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Data Flow Upload product\Derived Column"
+          TopLeft="180.99999730289,151.599999254942" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Data Flow Upload product\Conditional Split 1"
+          TopLeft="374.999979510904,192.888887683551" />
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Data Flow Upload product\Derived Column 2"
+          TopLeft="629.61903435796,496.08570922826" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Data Flow Upload product\Sort"
+          TopLeft="604.619034730489,337.685709645493" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Data Flow Upload product\Script Component 1"
+          TopLeft="379.550243812553,137.923809391223" />
         <NodeLayout
           Size="160,41.6"
           Id="Package\Data Flow Upload product\Flat File Source 1"
@@ -11774,54 +11826,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Size="156,41.6"
           Id="Package\Data Flow Upload product\Data Conversion"
           TopLeft="135.33333356844,345.799995942315" />
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\Data Flow Upload product\Union All"
-          TopLeft="343.999994874001,341.495234255044" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Data Flow Upload product\Script Component 1"
-          TopLeft="379.550243812553,137.923809391223" />
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Data Flow Upload product\Flat File Source"
-          TopLeft="171.999997437,30.999999538064" />
-        <NodeLayout
-          Size="164,41.6"
-          Id="Package\Data Flow Upload product\Data Conversion 1"
-          TopLeft="384.999993865688,262.933330090311" />
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Data Flow Upload product\Conditional Split 1"
-          TopLeft="374.999979510904,192.888887683551" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Data Flow Upload product\Sort"
-          TopLeft="604.619034730489,337.685709645493" />
-        <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Data Flow Upload product\Lookup"
-          TopLeft="200.833322360284,558.399999059836" />
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Data Flow Upload product\Derived Column"
-          TopLeft="180.99999730289,151.599999254942" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Data Flow Upload product\Script Component"
-          TopLeft="167.023800398031,214.685713619335" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Data Flow Upload product\Derived Column 2"
-          TopLeft="629.61903435796,496.08570922826" />
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Data Flow Upload product\OLE DB Source"
-          TopLeft="685.619033523496,221.285711165411" />
-        <NodeLayout
-          Size="161.6,41.6"
-          Id="Package\Data Flow Upload product\Derived Column 1"
-          TopLeft="379.999994337559,87.6000015985964" />
         <NodeLayout
           Size="153.6,41.6"
           Id="Package\Data Flow Upload product\Conditional Split"
@@ -11853,7 +11857,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Sort Output2]"
+          Id="Package\Data Flow Upload product.Paths[Sort Output]"
           TopLeft="864.819031645949,359.085710196836">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11887,7 +11891,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Sort Output1]"
+          Id="Package\Data Flow Upload product.Paths[Sort Output2]"
           TopLeft="399.71427833892,578.847616330111">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11911,7 +11915,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Sort Output]"
+          Id="Package\Data Flow Upload product.Paths[Sort Output1]"
           TopLeft="653.419034730489,379.285709645493">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11970,6 +11974,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     Point3="18.5,54.9650782923278" />
                   <mssgle:LineSegment
                     End="-5.05026430164912,54.9650782923278" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Output 0]"
+          TopLeft="328.623800398031,241.085713619335">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-0.923805452008196,50.5142853320211"
+              Start="0,0"
+              End="6.5761945479918,50.5142853320211">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,0"
+                    Point2="22.5,0"
+                    Point3="22.5,4" />
+                  <mssgle:LineSegment
+                    End="22.5,46.5142853320211" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5,46.5142853320211"
+                    Point2="22.5,50.5142853320211"
+                    Point3="18.5,50.5142853320211" />
+                  <mssgle:LineSegment
+                    End="6.5761945479918,50.5142853320211" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12083,7 +12121,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Flat File Source Output1]"
+          Id="Package\Data Flow Upload product.Paths[Flat File Source Output]"
           TopLeft="540.999994322658,51.799999538064">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12117,7 +12155,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Flat File Source Output]"
+          Id="Package\Data Flow Upload product.Paths[Flat File Source Output1]"
           TopLeft="171.999997437,51.799999538064">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12287,42 +12325,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Case 1]"
-          TopLeft="174.999997392297,119.200003159046">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="5.99999991059317,53.1999960958958"
-              Start="0,0"
-              End="-1.50000008940683,53.1999960958958">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
-                  <mssgle:LineSegment
-                    End="-22.5,49.1999960958958" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,49.1999960958958"
-                    Point2="-22.5,53.1999960958958"
-                    Point3="-18.5,53.1999960958958" />
-                  <mssgle:LineSegment
-                    End="-1.50000008940683,53.1999960958958" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-37.7180859375,-15.5537109375,30.436171875,9.5537109375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow Upload product.Paths[Case 12]"
           TopLeft="456.199979510904,234.488887683551">
           <EdgeLayout.Curve>
@@ -12356,66 +12358,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <mssgm:EdgeLabel
               BoundingBox="-9.81807876010813,19.2222212033802,30.436171875,9.5537109375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[1]"
-          TopLeft="291.33333356844,364.44761509868">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="52.6666613055606,0"
-              Start="0,0"
-              End="45.1666613055606,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="45.1666613055606,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Data Flow Upload product\Conditional Split 2"
-          TopLeft="165.299994946023,270.799998951356" />
-        <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Output 0]"
-          TopLeft="328.623800398031,241.085713619335">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-0.923805452008196,50.5142853320211"
-              Start="0,0"
-              End="6.5761945479918,50.5142853320211">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.5,0"
-                    Point2="22.5,0"
-                    Point3="22.5,4" />
-                  <mssgle:LineSegment
-                    End="22.5,46.5142853320211" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.5,46.5142853320211"
-                    Point2="22.5,50.5142853320211"
-                    Point3="18.5,50.5142853320211" />
-                  <mssgle:LineSegment
-                    End="6.5761945479918,50.5142853320211" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12454,11 +12396,69 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Case 1]"
+          TopLeft="174.999997392297,119.200003159046">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="5.99999991059317,53.1999960958958"
+              Start="0,0"
+              End="-1.50000008940683,53.1999960958958">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,0"
+                    Point2="-22.5,0"
+                    Point3="-22.5,4" />
+                  <mssgle:LineSegment
+                    End="-22.5,49.1999960958958" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.5,49.1999960958958"
+                    Point2="-22.5,53.1999960958958"
+                    Point3="-18.5,53.1999960958958" />
+                  <mssgle:LineSegment
+                    End="-1.50000008940683,53.1999960958958" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-37.7180859375,-15.5537109375,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[1]"
+          TopLeft="291.33333356844,364.44761509868">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="52.6666613055606,0"
+              Start="0,0"
+              End="45.1666613055606,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="45.1666613055606,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Upload product\OLE DB Destination">
+    design-time-name="Package\Data Flow Upload product\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12494,7 +12494,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Upload product\OLE DB Source">
+    design-time-name="Package\Data Flow Upload product\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
