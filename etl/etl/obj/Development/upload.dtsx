@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="upload"
   DTS:PackageType="5"
-  DTS:VersionBuild="253"
-  DTS:VersionGUID="{97ACECB1-905A-43B7-A581-37D5209E57B1}">
+  DTS:VersionBuild="254"
+  DTS:VersionGUID="{4AA54BD8-CBC0-4F38-A241-5A3454E7B850}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
