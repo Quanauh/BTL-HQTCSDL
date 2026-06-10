@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="upload"
   DTS:PackageType="5"
-  DTS:VersionBuild="247"
-  DTS:VersionGUID="{8682905C-FE9C-40CB-9473-F0B1A5CFDBF8}">
+  DTS:VersionBuild="253"
+  DTS:VersionGUID="{97ACECB1-905A-43B7-A581-37D5209E57B1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -5508,7 +5508,7 @@ where [refTable].[ten] = ?</property>
                       cachedDataType="str"
                       cachedLength="200"
                       cachedName="Mobile"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Mobile]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -5528,7 +5528,7 @@ where [refTable].[ten] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]} != ""</property>
+                      name="Expression">#{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Mobile]} != ""</property>
                     <property
                       containsID="true"
                       dataType="System.String"
@@ -5879,21 +5879,21 @@ where [refTable].[ten] = ?</property>
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Brands"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Brands]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Brands]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Data Conversion 1.Inputs[Data Conversion Input].Columns[Mobile]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="200"
                       cachedName="Mobile"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Mobile]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Data Conversion 1.Inputs[Data Conversion Input].Columns[Original Price]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Original Price"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Original Price]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Original Price]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Data Conversion 1.Inputs[Data Conversion Input].Columns[des]"
                       cachedDataType="wstr"
@@ -5925,7 +5925,7 @@ where [refTable].[ten] = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Brands]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Brands]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -5946,7 +5946,7 @@ where [refTable].[ten] = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Mobile]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -5968,7 +5968,7 @@ where [refTable].[ten] = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Original Price]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Original Price]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -6168,28 +6168,28 @@ where [refTable].[ten] = ?</property>
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Models"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Models]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Models]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input].Columns[Colors]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Colors"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Colors]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Colors]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input].Columns[Memory]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Memory"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Memory]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Memory]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input].Columns[Camera]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Camera"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Camera]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Camera]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input].Columns[Brands]"
                       cachedCodepage="65001"
@@ -6198,7 +6198,7 @@ where [refTable].[ten] = ?</property>
                       cachedName="Brands"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Brands]"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Brands]"
                       truncationRowDisposition="FailComponent"
                       usageType="readWrite">
                       <properties>
@@ -6206,7 +6206,7 @@ where [refTable].[ten] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[LOWER](#{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Brands]})</property>
+                          name="Expression">[LOWER](#{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Brands]})</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -6223,7 +6223,7 @@ where [refTable].[ten] = ?</property>
                       cachedName="Mobile"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Mobile]"
                       name="product"
                       truncationRowDisposition="FailComponent"
                       usageType="readWrite">
@@ -6232,13 +6232,38 @@ where [refTable].[ten] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[LOWER](#{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]})</property>
+                          name="Expression">[LOWER](#{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Mobile]})</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
                           name="FriendlyExpression">LOWER(product)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input].Columns[Original Price]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Original Price"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Original Price]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(((DT_NUMERIC,18,2)#{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Original Price]}) * 160)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(((DT_NUMERIC,18,2)[Original Price]) * 160)</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -6267,7 +6292,7 @@ where [refTable].[ten] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Models]} + " | " + #{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Colors]} + " | " + #{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Memory]} + " | " + #{Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Camera]}</property>
+                          name="Expression">#{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Models]} + " | " + #{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Colors]} + " | " + #{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Memory]} + " | " + #{Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Camera]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -6797,407 +6822,6 @@ where [refTable].[ten] = ?</property>
                       refId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Upload product\Flat File Source 1"
-              componentClassID="Microsoft.FlatFileSource"
-              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Source"
-              localeId="1033"
-              name="Flat File Source 1"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
-                  name="FileNameColumnName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Upload product\Flat File Source 1.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[sp2]"
-                  connectionManagerRefId="Package.ConnectionManagers[sp2]"
-                  name="FlatFileConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output]"
-                  name="Flat File Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Brands]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Brands]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Brands]"
-                      name="Brands"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Models]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Models]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Models]"
-                      name="Models"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Colors]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Colors]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Colors]"
-                      name="Colors"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Memory]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Memory]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Memory]"
-                      name="Memory"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Storage]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Storage]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Storage]"
-                      name="Storage"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Camera]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Camera]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Camera]"
-                      name="Camera"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Rating]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Rating]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Rating]"
-                      name="Rating"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Selling Price]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Selling Price]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Selling Price]"
-                      name="Selling Price"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Original Price]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Original Price]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Original Price]"
-                      name="Original Price"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Mobile]"
-                      length="200"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]"
-                      name="Mobile"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Discount]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Discount]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Discount]"
-                      name="Discount"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[discount percentage]"
-                      codePage="65001"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[discount percentage]"
-                      length="50"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[discount percentage]"
-                      name="discount percentage"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Brands]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Brands" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Models]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Models" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Colors]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Colors" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Memory]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Memory" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Storage]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Storage" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Camera]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Camera" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Rating]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Rating" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Selling Price]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Selling Price" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Original Price]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Original Price" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Mobile]"
-                      codePage="65001"
-                      dataType="str"
-                      length="200"
-                      name="Mobile" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[Discount]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Discount" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[discount percentage]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="discount percentage" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Error Output]"
-                  isErrorOut="true"
-                  name="Flat File Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="65001"
-                      dataType="text"
-                      description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      name="Flat File Source Error Output Column" />
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -9777,35 +9401,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Models"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Models]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Models]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Script Component 1.Inputs[Input 0].Columns[Colors]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Colors"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Colors]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Colors]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Script Component 1.Inputs[Input 0].Columns[Memory]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Memory"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Memory]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Memory]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Script Component 1.Inputs[Input 0].Columns[Storage]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Storage"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Storage]" />
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Storage]" />
                     <inputColumn
                       refId="Package\Data Flow Upload product\Script Component 1.Inputs[Input 0].Columns[Mobile]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="200"
                       cachedName="Mobile"
-                      lineageId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output].Columns[Mobile]"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Mobile]"
                       usageType="readWrite" />
                   </inputColumns>
                   <externalMetadataColumns />
@@ -10370,6 +9994,407 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               </outputs>
             </component>
             <component
+              refId="Package\Data Flow Upload product\sp2"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="sp2"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Upload product\sp2.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sp2]"
+                  connectionManagerRefId="Package.ConnectionManagers[sp2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Brands]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Brands]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Brands]"
+                      name="Brands"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Models]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Models]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Models]"
+                      name="Models"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Colors]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Colors]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Colors]"
+                      name="Colors"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Memory]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Memory]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Memory]"
+                      name="Memory"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Storage]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Storage]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Storage]"
+                      name="Storage"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Camera]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Camera]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Camera]"
+                      name="Camera"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Rating]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Rating]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Rating]"
+                      name="Rating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Selling Price]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Selling Price]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Selling Price]"
+                      name="Selling Price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Original Price]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Original Price]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Original Price]"
+                      name="Original Price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Mobile]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Mobile]"
+                      length="200"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Mobile]"
+                      name="Mobile"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Discount]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Discount]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[Discount]"
+                      name="Discount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[discount percentage]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[discount percentage]"
+                      length="50"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].Columns[discount percentage]"
+                      name="discount percentage"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Brands]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Brands" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Models]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Models" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Colors]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Colors" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Memory]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Memory" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Storage]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Storage" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Camera]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Camera" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Rating]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Rating" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Selling Price]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Selling Price" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Original Price]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Original Price" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Mobile]"
+                      codePage="65001"
+                      dataType="str"
+                      length="200"
+                      name="Mobile" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[Discount]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Discount" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output].ExternalColumns[discount percentage]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="discount percentage" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow Upload product\Union All"
               componentClassID="Microsoft.UnionAll"
               contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -10614,14 +10639,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               startId="Package\Data Flow Upload product\Derived Column 1.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Flat File Source Output1]"
-              endId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input]"
-              name="Flat File Source Output"
-              startId="Package\Data Flow Upload product\Flat File Source 1.Outputs[Flat File Source Output]" />
-            <path
-              refId="Package\Data Flow Upload product.Paths[Flat File Source Output]"
               endId="Package\Data Flow Upload product\Conditional Split.Inputs[Conditional Split Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Upload product.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Lookup No Match Output]"
               endId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input]"
@@ -10648,17 +10673,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               name="Output 0"
               startId="Package\Data Flow Upload product\Script Component 1.Outputs[Output 0]" />
             <path
-              refId="Package\Data Flow Upload product.Paths[Sort Output2]"
+              refId="Package\Data Flow Upload product.Paths[Sort Output]"
               endId="Package\Data Flow Upload product\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Data Flow Upload product\Sort 1.Outputs[Sort Output]" />
             <path
-              refId="Package\Data Flow Upload product.Paths[Sort Output]"
+              refId="Package\Data Flow Upload product.Paths[Sort Output1]"
               endId="Package\Data Flow Upload product\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Data Flow Upload product\Sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Data Flow Upload product.Paths[Sort Output1]"
+              refId="Package\Data Flow Upload product.Paths[Sort Output2]"
               endId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]"
               name="Sort Output"
               startId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output]" />
@@ -10742,26 +10767,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="17.2999993170299,46.7999993852778"
+              EndConnector="17.29999931703,46.799999385278"
               Start="0,0"
-              End="17.2999993170299,39.2999993852778">
+              End="17.29999931703,39.299999385278">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.3999996926389" />
+                    End="0,19.399999692639" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.3999996926389"
-                    Point2="0,23.3999996926389"
-                    Point3="4,23.3999996926389" />
+                    Point1="0,19.399999692639"
+                    Point2="0,23.399999692639"
+                    Point3="4,23.399999692639" />
                   <mssgle:LineSegment
-                    End="13.2999993170299,23.3999996926389" />
+                    End="13.29999931703,23.399999692639" />
                   <mssgle:CubicBezierSegment
-                    Point1="13.2999993170299,23.3999996926389"
-                    Point2="17.2999993170299,23.3999996926389"
-                    Point3="17.2999993170299,27.3999996926389" />
+                    Point1="13.29999931703,23.399999692639"
+                    Point2="17.29999931703,23.399999692639"
+                    Point3="17.29999931703,27.399999692639" />
                   <mssgle:LineSegment
-                    End="17.2999993170299,39.2999993852778" />
+                    End="17.29999931703,39.299999385278" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11815,13 +11840,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Data Flow Upload product\Script Component 1"
           TopLeft="379.550243812553,137.923809391223" />
         <NodeLayout
-          Size="160,41.6"
-          Id="Package\Data Flow Upload product\Flat File Source 1"
-          TopLeft="380.999994322658,30.999999538064" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Data Flow Upload product\OLE DB Destination"
-          TopLeft="44.9999975413085,663.170368701646" />
+          Size="95.2,41.6"
+          Id="Package\Data Flow Upload product\sp2"
+          TopLeft="410.166659395729,19.7333329497443" />
         <NodeLayout
           Size="156,41.6"
           Id="Package\Data Flow Upload product\Data Conversion"
@@ -11858,40 +11879,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Upload product.Paths[Sort Output2]"
-          TopLeft="864.819031645949,359.085710196836">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-80.3999986290934,55.3999987334013"
-              Start="0,0"
-              End="-80.3999986290934,47.8999987334013">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.6999993667006" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.6999993667006"
-                    Point2="0,27.6999993667006"
-                    Point3="-4,27.6999993667006" />
-                  <mssgle:LineSegment
-                    End="-76.3999986290934,27.6999993667006" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-76.3999986290934,27.6999993667006"
-                    Point2="-80.3999986290934,27.6999993667006"
-                    Point3="-80.3999986290934,31.6999993667006" />
-                  <mssgle:LineSegment
-                    End="-80.3999986290934,47.8999987334013" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Sort Output1]"
           TopLeft="399.71427833892,578.847616330111">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11915,7 +11902,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Sort Output]"
+          Id="Package\Data Flow Upload product.Paths[Sort Output1]"
           TopLeft="653.419034730489,379.285709645493">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11940,6 +11927,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     Point3="110.7333316197,24.8624386004704" />
                   <mssgle:LineSegment
                     End="110.7333316197,27.6999992847443" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Sort Output]"
+          TopLeft="864.819031645949,359.085710196836">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-80.3999986290934,55.3999987334013"
+              Start="0,0"
+              End="-80.3999986290934,47.8999987334013">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.6999993667006" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.6999993667006"
+                    Point2="0,27.6999993667006"
+                    Point3="-4,27.6999993667006" />
+                  <mssgle:LineSegment
+                    End="-76.3999986290934,27.6999993667006" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-76.3999986290934,27.6999993667006"
+                    Point2="-80.3999986290934,27.6999993667006"
+                    Point3="-80.3999986290934,31.6999993667006" />
+                  <mssgle:LineSegment
+                    End="-80.3999986290934,47.8999987334013" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12085,77 +12106,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Lookup No Match Output]"
-          TopLeft="239.766655693618,599.999999059836">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-109.166658152309,63.1703696418101"
-              Start="0,0"
-              End="-109.166658152309,55.6703696418101">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.7982488607113" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.7982488607113"
-                    Point2="0,25.7982488607113"
-                    Point3="-4,25.7982488607113" />
-                  <mssgle:LineSegment
-                    End="-105.166658152309,25.7982488607113" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-105.166658152309,25.7982488607113"
-                    Point2="-109.166658152309,25.7982488607113"
-                    Point3="-109.166658152309,29.7982488607113" />
-                  <mssgle:LineSegment
-                    End="-109.166658152309,55.6703696418101" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-119.258368138654,30.7982488607113,129.350078125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow Upload product.Paths[Flat File Source Output1]"
-          TopLeft="540.999994322658,51.799999538064">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0.600000014900957,56.6000020605324"
-              Start="0,0"
-              End="8.10000001490096,56.6000020605324">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="19.100000014901,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="19.100000014901,0"
-                    Point2="23.100000014901,0"
-                    Point3="23.100000014901,4" />
-                  <mssgle:LineSegment
-                    End="23.100000014901,52.6000020605324" />
-                  <mssgle:CubicBezierSegment
-                    Point1="23.100000014901,52.6000020605324"
-                    Point2="23.100000014901,56.6000020605324"
-                    Point3="19.100000014901,56.6000020605324" />
-                  <mssgle:LineSegment
-                    End="8.10000001490096,56.6000020605324" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Flat File Source Output]"
           TopLeft="171.999997437,51.799999538064">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12180,6 +12131,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                     Point3="-18.5,61.800003620982" />
                   <mssgle:LineSegment
                     End="-4.50000004470368,61.800003620982" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Flat File Source Output]"
+          TopLeft="459.283326866644,61.3333329497443">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.2666686488521"
+              Start="0,0"
+              End="0,18.7666686488521">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.7666686488521" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12219,7 +12192,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-30.9497505250056,-22,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12454,6 +12429,46 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Data Flow Upload product\OLE DB Destination"
+          TopLeft="107.499994126459,667.503702004846" />
+        <EdgeLayout
+          Id="Package\Data Flow Upload product.Paths[Lookup No Match Output]"
+          TopLeft="257.233322360284,599.999999059836">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-64.1333282338248,67.5037029450099"
+              Start="0,0"
+              End="-64.1333282338248,60.0037029450099">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.7518514725049" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.7518514725049"
+                    Point2="0,33.7518514725049"
+                    Point3="-4,33.7518514725049" />
+                  <mssgle:LineSegment
+                    End="-60.1333282338248,33.7518514725049" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-60.1333282338248,33.7518514725049"
+                    Point2="-64.1333282338248,33.7518514725049"
+                    Point3="-64.1333282338248,37.7518514725049" />
+                  <mssgle:LineSegment
+                    End="-64.1333282338248,60.0037029450099" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-87.8730508356624,38.7518514725049,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -12490,19 +12505,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Upload product\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
