@@ -1,0 +1,151 @@
+.navbar-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-radius: 0 0 16px 16px;
+  margin: 0 0 24px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  gap: 20px;
+}
+
+.navbar-logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-logo-text {
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-search-form {
+  flex: 1;
+  max-width: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search-input {
+  width: 100%;
+  padding: 10px 40px 10px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  transition: var(--transition);
+}
+
+.navbar-search-input:focus {
+  border-color: var(--primary);
+}
+
+.navbar-search-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-nav-link {
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.navbar-nav-link.active {
+  color: var(--primary);
+}
+
+.navbar-cart-container {
+  position: relative;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-cart-container.active {
+  color: var(--primary);
+}
+
+.navbar-cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--danger);
+  color: white;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  font-size: 10px;
+}
+
+.navbar-divider {
+  height: 20px;
+  width: 1px;
+  background-color: var(--border);
+}
+
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar-profile-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.navbar-profile-link.active {
+  color: var(--primary);
+}
+
+.navbar-profile-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar-auth-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  gap: 6px;
+  font-size: 14px;
+}
+
+.navbar-logout-btn {
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  gap: 6px;
+  font-size: 13px;
+}

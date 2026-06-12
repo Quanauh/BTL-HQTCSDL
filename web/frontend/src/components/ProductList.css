@@ -1,0 +1,232 @@
+.toast-notification {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  color: white;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  fontWeight: 600;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  color: white;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 32px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-desc {
+  font-size: 16px;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+.filters-wrapper {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter-group-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.brand-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.price-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border);
+}
+
+.price-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.price-input-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.price-field-input {
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  outline: none;
+  background-color: var(--surface);
+  font-size: 14px;
+  width: 150px;
+  transition: var(--transition);
+}
+
+.price-field-input:focus {
+  border-color: var(--primary);
+}
+
+.sort-select-field {
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  outline: none;
+  background-color: var(--surface);
+  font-size: 14px;
+  min-width: 160px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.product-card-badge-area {
+  height: 140px;
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.product-card-brand-logo {
+  font-size: 36px;
+  font-weight: 800;
+  opacity: 0.35;
+  color: var(--text-secondary);
+}
+
+.product-card-brand-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  borderRadius: 20px;
+}
+
+.product-card-stock-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  borderRadius: 20px;
+  background: var(--danger);
+  color: white;
+}
+
+.product-card-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+.product-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.product-card-title:hover {
+  color: var(--primary);
+}
+
+.product-card-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 60px;
+}
+
+.product-card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.product-card-price {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.product-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.product-empty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  color: var(--text-secondary);
+  text-align: center;
+  gap: 12px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+  padding: 16px;
+}
+
+.pagination-text {
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 14px;
+}

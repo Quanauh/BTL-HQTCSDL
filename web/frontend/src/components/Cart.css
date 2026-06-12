@@ -1,0 +1,250 @@
+.cart-auth-box {
+  padding: 60px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 500px;
+}
+
+.cart-success-box {
+  padding: 60px;
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-success-badge {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.cart-success-actions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.cart-grid-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .cart-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cart-items-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .cart-item-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.cart-item-placeholder {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-sm);
+  background-color: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.cart-item-meta {
+  flex: 1;
+}
+
+.cart-item-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.cart-item-meta-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cart-item-brand-tag {
+  font-size: 11px;
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.cart-item-price {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.cart-item-qty-adjuster {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 2px;
+}
+
+.cart-item-qty-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-qty-number {
+  padding: 0 10px;
+  font-weight: 700;
+  min-width: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.cart-item-subtotal {
+  text-align: right;
+  min-width: 100px;
+}
+
+.cart-item-subtotal-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cart-item-remove-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.cart-item-remove-btn:hover {
+  color: var(--danger);
+}
+
+.cart-summary-panel {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-summary-title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cart-summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-summary-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.cart-summary-divider {
+  height: 1px;
+  background-color: var(--border);
+  margin: 8px 0;
+}
+
+.cart-summary-total-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cart-summary-total-price {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.cart-checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cart-form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cart-form-textarea {
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.cart-form-textarea:focus {
+  border-color: var(--primary);
+}
+
+.cart-form-select {
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  outline: none;
+  background-color: white;
+  font-size: 14px;
+}
