@@ -1,0 +1,166 @@
+.order-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.order-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-id-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.order-id-title {
+  fontSize: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.order-status-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.order-date-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.order-amount-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.order-amount-wrapper {
+  text-align: right;
+}
+
+.order-amount-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.order-amount-value {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.order-detail-toggle-btn {
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.order-expanded-details {
+  margin-top: 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.order-items-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.order-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.order-item-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.order-item-qty {
+  margin-left: 12px;
+  color: var(--text-muted);
+}
+
+.order-item-subtotal {
+  font-weight: 700;
+}
+
+.order-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.order-detail-card {
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.order-detail-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.order-detail-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.order-detail-card-highlight {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.order-detail-card-status {
+  margin-left: 6px;
+  font-weight: 700;
+  color: var(--primary);
+}
