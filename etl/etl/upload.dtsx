@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="upload"
   DTS:PackageType="5"
-  DTS:VersionBuild="254"
-  DTS:VersionGUID="{4AA54BD8-CBC0-4F38-A241-5A3454E7B850}">
+  DTS:VersionBuild="255"
+  DTS:VersionGUID="{2B811246-58A6-4C10-B821-73595C49A8B1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -35,6 +35,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{D9017633-95A2-4DD0-B534-1EDC08E80A76}"
       DTS:ObjectName="sp1">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::dataPath]+"Mobiles_Dataset.csv"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -10639,14 +10641,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               startId="Package\Data Flow Upload product\Derived Column 1.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Flat File Source Output1]"
-              endId="Package\Data Flow Upload product\Conditional Split.Inputs[Conditional Split Input]"
-              name="Flat File Source Output"
-              startId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Output]" />
-            <path
-              refId="Package\Data Flow Upload product.Paths[Flat File Source Output]"
               endId="Package\Data Flow Upload product\Derived Column 1.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Upload product\sp2.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Upload product.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Upload product\Conditional Split.Inputs[Conditional Split Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Upload product\Flat File Source.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Lookup No Match Output]"
               endId="Package\Data Flow Upload product\OLE DB Destination.Inputs[OLE DB Destination Input]"
@@ -10673,6 +10675,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               name="Output 0"
               startId="Package\Data Flow Upload product\Script Component 1.Outputs[Output 0]" />
             <path
+              refId="Package\Data Flow Upload product.Paths[Sort Output2]"
+              endId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output]" />
+            <path
               refId="Package\Data Flow Upload product.Paths[Sort Output]"
               endId="Package\Data Flow Upload product\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
@@ -10682,11 +10689,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               endId="Package\Data Flow Upload product\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Data Flow Upload product\Sort.Outputs[Sort Output]" />
-            <path
-              refId="Package\Data Flow Upload product.Paths[Sort Output2]"
-              endId="Package\Data Flow Upload product\Lookup.Inputs[Lookup Input]"
-              name="Sort Output"
-              startId="Package\Data Flow Upload product\Sort 2.Outputs[Sort Output]" />
             <path
               refId="Package\Data Flow Upload product.Paths[Union All Output 1]"
               endId="Package\Data Flow Upload product\Sort.Inputs[Sort Input]"
@@ -12106,7 +12108,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Flat File Source Output1]"
+          Id="Package\Data Flow Upload product.Paths[Flat File Source Output]"
           TopLeft="171.999997437,51.799999538064">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12140,7 +12142,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Upload product.Paths[Flat File Source Output]"
+          Id="Package\Data Flow Upload product.Paths[Flat File Source Output1]"
           TopLeft="459.283326866644,61.3333329497443">
           <EdgeLayout.Curve>
             <mssgle:Curve
