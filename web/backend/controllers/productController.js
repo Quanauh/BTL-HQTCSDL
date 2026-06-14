@@ -12,7 +12,7 @@ exports.getBrands = async (req, res) => {
         { hang_id: 4, ten: 'Asus', mo_ta: 'Asus Computer' }
       ]);
     }
-    const result = await pool.request().query('SELECT * FROM HANG ORDER BY ten');
+    const result = await pool.request().query('SELECT * FROM HANG WITH (NOLOCK) ORDER BY ten');
     res.json(result.recordset);
   } catch (err) {
     console.error('Lỗi khi lấy danh sách hãng:', err);
@@ -79,8 +79,8 @@ exports.getProducts = async (req, res) => {
     const countRequest = pool.request();
     let countQuery = `
       SELECT COUNT(*) AS total
-      FROM SAN_PHAM sp
-      LEFT JOIN HANG h ON sp.hang_id = h.hang_id
+      FROM SAN_PHAM sp WITH (NOLOCK)
+      LEFT JOIN HANG h WITH (NOLOCK) ON sp.hang_id = h.hang_id
       WHERE 1=1
     `;
 
@@ -88,8 +88,8 @@ exports.getProducts = async (req, res) => {
     const dataRequest = pool.request();
     let dataQuery = `
       SELECT sp.*, h.ten AS ten_hang
-      FROM SAN_PHAM sp
-      LEFT JOIN HANG h ON sp.hang_id = h.hang_id
+      FROM SAN_PHAM sp WITH (NOLOCK)
+      LEFT JOIN HANG h WITH (NOLOCK) ON sp.hang_id = h.hang_id
       WHERE 1=1
     `;
 
@@ -176,8 +176,8 @@ exports.getProductDetail = async (req, res) => {
       .input('id', sql.Int, parseInt(id))
       .query(`
         SELECT sp.*, h.ten AS ten_hang, h.mo_ta AS mo_ta_hang
-        FROM SAN_PHAM sp
-        LEFT JOIN HANG h ON sp.hang_id = h.hang_id
+        FROM SAN_PHAM sp WITH (NOLOCK)
+        LEFT JOIN HANG h WITH (NOLOCK) ON sp.hang_id = h.hang_id
         WHERE sp.san_pham_id = @id
       `);
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
@@ -6,12 +6,21 @@ import Cart from './components/Cart';
 import Orders from './components/Orders';
 import Profile from './components/Profile';
 import AuthModal from './components/AuthModal';
+import AdminDashboard from './components/AdminDashboard';
+import { AuthContext } from './context/AuthContext';
 
 function AppContent() {
+  const { user } = useContext(AuthContext);
   const [activeView, setActiveView] = useState('shop'); // 'shop' | 'detail' | 'cart' | 'orders' | 'profile'
   const [activeProductId, setActiveProductId] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [showAuthModal, setShowAuthModal] = useState(false);
+
+  // Redirect to Admin Panel if user is admin
+  if (user && user.vai_tro === 'admin') {
+    return <AdminDashboard />;
+  }
+
 
   const handleSearch = (query) => {
     setSearchQuery(query);
