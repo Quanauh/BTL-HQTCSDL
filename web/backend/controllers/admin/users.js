@@ -33,16 +33,16 @@ exports.getUsers = async (req, res) => {
     const countRequest = pool.request();
     let countQuery = `
       SELECT COUNT(*) AS total
-      FROM TAI_KHOAN tk
-      LEFT JOIN KHACH_HANG kh ON tk.tai_khoan_id = kh.tai_khoan_id
+      FROM TAI_KHOAN tk WITH (NOLOCK)
+      LEFT JOIN KHACH_HANG kh WITH (NOLOCK) ON tk.tai_khoan_id = kh.tai_khoan_id
       WHERE 1=1
     `;
 
     const dataRequest = pool.request();
     let dataQuery = `
       SELECT tk.tai_khoan_id, tk.email, tk.vai_tro, kh.khach_hang_id, kh.ho_ten, kh.so_dien_thoai, kh.dia_chi
-      FROM TAI_KHOAN tk
-      LEFT JOIN KHACH_HANG kh ON tk.tai_khoan_id = kh.tai_khoan_id
+      FROM TAI_KHOAN tk WITH (NOLOCK)
+      LEFT JOIN KHACH_HANG kh WITH (NOLOCK) ON tk.tai_khoan_id = kh.tai_khoan_id
       WHERE 1=1
     `;
 
@@ -97,7 +97,7 @@ exports.updateUser = async (req, res) => {
     const checkEmail = await pool.request()
       .input('id', sql.Int, id)
       .input('email', sql.NVarChar, email)
-      .query('SELECT tai_khoan_id FROM TAI_KHOAN WHERE email = @email AND tai_khoan_id <> @id');
+      .query('SELECT tai_khoan_id FROM TAI_KHOAN WITH (NOLOCK) WHERE email = @email AND tai_khoan_id <> @id');
 
     if (checkEmail.recordset.length > 0) {
       return res.status(400).json({ message: 'Email này đã được sử dụng bởi tài khoản khác' });
@@ -119,7 +119,7 @@ exports.updateUser = async (req, res) => {
       const requestCheckKhach = new sql.Request(transaction);
       const checkKhach = await requestCheckKhach
         .input('tai_khoan_id', sql.Int, id)
-        .query('SELECT khach_hang_id FROM KHACH_HANG WHERE tai_khoan_id = @tai_khoan_id');
+        .query('SELECT khach_hang_id FROM KHACH_HANG WITH (NOLOCK) WHERE tai_khoan_id = @tai_khoan_id');
 
       const requestProfile = new sql.Request(transaction);
       requestProfile
@@ -172,8 +172,8 @@ exports.deleteUser = async (req, res) => {
       .input('id', sql.Int, id)
       .query(`
         SELECT COUNT(dh.don_hang_id) AS count 
-        FROM DON_HANG dh
-        INNER JOIN KHACH_HANG kh ON dh.khach_hang_id = kh.khach_hang_id
+        FROM DON_HANG dh WITH (NOLOCK)
+        INNER JOIN KHACH_HANG kh WITH (NOLOCK) ON dh.khach_hang_id = kh.khach_hang_id
         WHERE kh.tai_khoan_id = @id
       `);
 

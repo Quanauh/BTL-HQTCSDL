@@ -21,9 +21,9 @@ export default function OrdersTab({
       <div className="admin-section-header">
         <h2 style={{ fontSize: '20px', fontWeight: 800 }}>Quản lý Đơn hàng Khách hàng</h2>
         <div className="admin-search-wrapper">
-          <input 
-            type="text" 
-            placeholder="Tìm mã đơn hoặc khách..." 
+          <input
+            type="text"
+            placeholder="Tìm mã đơn hoặc khách..."
             value={orderSearchInput}
             onChange={(e) => setOrderSearchInput(e.target.value)}
             onKeyDown={(e) => { if (e.key === 'Enter') triggerSearch(); }}
@@ -93,16 +93,16 @@ export default function OrdersTab({
       </div>
 
       <div className="admin-pagination">
-        <button 
-          disabled={orderPage <= 1} 
+        <button
+          disabled={orderPage <= 1}
           onClick={() => setOrderPage(prev => prev - 1)}
           className="btn btn-secondary btn-sm"
         >
           Trước
         </button>
         <span className="pagination-info">Trang {orderPage} / {orderTotalPages}</span>
-        <button 
-          disabled={orderPage >= orderTotalPages} 
+        <button
+          disabled={orderPage >= orderTotalPages}
           onClick={() => setOrderPage(prev => prev + 1)}
           className="btn btn-secondary btn-sm"
         >

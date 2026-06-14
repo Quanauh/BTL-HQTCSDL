@@ -63,7 +63,7 @@ exports.deleteProduct = async (req, res) => {
     // Referential integrity check (Orders)
     const checkOrders = await pool.request()
       .input('id', sql.Int, id)
-      .query('SELECT COUNT(*) AS count FROM CHI_TIET_DON_HANG WHERE san_pham_id = @id');
+      .query('SELECT COUNT(*) AS count FROM CHI_TIET_DON_HANG WITH (NOLOCK) WHERE san_pham_id = @id');
 
     if (checkOrders.recordset[0].count > 0) {
       // Instead of throwing error, we soft-disable the product (out of stock)

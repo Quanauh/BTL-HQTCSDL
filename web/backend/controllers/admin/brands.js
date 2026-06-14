@@ -33,9 +33,9 @@ exports.getBrands = async (req, res) => {
     }
 
     const countRequest = pool.request();
-    let countQuery = 'SELECT COUNT(*) AS total FROM HANG WHERE 1=1';
+    let countQuery = 'SELECT COUNT(*) AS total FROM HANG WITH (NOLOCK) WHERE 1=1';
     const dataRequest = pool.request();
-    let dataQuery = 'SELECT * FROM HANG WHERE 1=1';
+    let dataQuery = 'SELECT * FROM HANG WITH (NOLOCK) WHERE 1=1';
 
     if (search) {
       countQuery += ' AND (ten LIKE @search OR mo_ta LIKE @search)';
@@ -119,7 +119,7 @@ exports.deleteBrand = async (req, res) => {
     // Referential integrity check
     const checkProducts = await pool.request()
       .input('id', sql.Int, id)
-      .query('SELECT COUNT(*) AS count FROM SAN_PHAM WHERE hang_id = @id');
+      .query('SELECT COUNT(*) AS count FROM SAN_PHAM WITH (NOLOCK) WHERE hang_id = @id');
 
     if (checkProducts.recordset[0].count > 0) {
       return res.status(400).json({ message: 'Không thể xóa hãng này vì vẫn còn sản phẩm đang thuộc về hãng.' });

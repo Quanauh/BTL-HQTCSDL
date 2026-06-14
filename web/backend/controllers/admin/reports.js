@@ -32,19 +32,19 @@ exports.getReports = async (req, res) => {
     // 1. Core KPIs
     const kpiResult = await pool.request().query(`
       SELECT 
-        (SELECT COUNT(*) FROM DON_HANG) AS totalOrders,
-        (SELECT ISNULL(SUM(tong_tien), 0) FROM DON_HANG WHERE trang_thai <> N'Hủy') AS totalRevenue,
-        (SELECT COUNT(*) FROM SAN_PHAM) AS totalProducts,
-        (SELECT COUNT(*) FROM HANG) AS activeBrands
+        (SELECT COUNT(*) FROM DON_HANG WITH (NOLOCK)) AS totalOrders,
+        (SELECT ISNULL(SUM(tong_tien), 0) FROM DON_HANG WITH (NOLOCK) WHERE trang_thai <> N'Hủy') AS totalRevenue,
+        (SELECT COUNT(*) FROM SAN_PHAM WITH (NOLOCK)) AS totalProducts,
+        (SELECT COUNT(*) FROM HANG WITH (NOLOCK)) AS activeBrands
     `);
 
     // 2. Revenue split by Brand
     const brandRevenueResult = await pool.request().query(`
       SELECT h.ten AS name, ISNULL(SUM(ctdh.so_luong * ctdh.don_gia), 0) AS value
-      FROM CHI_TIET_DON_HANG ctdh
-      INNER JOIN SAN_PHAM sp ON ctdh.san_pham_id = sp.san_pham_id
-      INNER JOIN HANG h ON sp.hang_id = h.hang_id
-      INNER JOIN DON_HANG dh ON ctdh.don_hang_id = dh.don_hang_id
+      FROM CHI_TIET_DON_HANG ctdh WITH (NOLOCK)
+      INNER JOIN SAN_PHAM sp WITH (NOLOCK) ON ctdh.san_pham_id = sp.san_pham_id
+      INNER JOIN HANG h WITH (NOLOCK) ON sp.hang_id = h.hang_id
+      INNER JOIN DON_HANG dh WITH (NOLOCK) ON ctdh.don_hang_id = dh.don_hang_id
       WHERE dh.trang_thai <> N'Hủy'
       GROUP BY h.ten
     `);
@@ -52,8 +52,8 @@ exports.getReports = async (req, res) => {
     // 3. Top 5 best selling products
     const topProductsResult = await pool.request().query(`
       SELECT TOP 5 ctdh.ten_san_pham AS name, SUM(ctdh.so_luong) AS value
-      FROM CHI_TIET_DON_HANG ctdh
-      INNER JOIN DON_HANG dh ON ctdh.don_hang_id = dh.don_hang_id
+      FROM CHI_TIET_DON_HANG ctdh WITH (NOLOCK)
+      INNER JOIN DON_HANG dh WITH (NOLOCK) ON ctdh.don_hang_id = dh.don_hang_id
       WHERE dh.trang_thai <> N'Hủy'
       GROUP BY ctdh.ten_san_pham
       ORDER BY value DESC

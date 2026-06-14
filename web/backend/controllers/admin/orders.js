@@ -32,8 +32,8 @@ exports.getOrders = async (req, res) => {
     const countRequest = pool.request();
     let countQuery = `
       SELECT COUNT(*) AS total
-      FROM DON_HANG dh
-      INNER JOIN KHACH_HANG kh ON dh.khach_hang_id = kh.khach_hang_id
+      FROM DON_HANG dh WITH (NOLOCK)
+      INNER JOIN KHACH_HANG kh WITH (NOLOCK) ON dh.khach_hang_id = kh.khach_hang_id
       WHERE 1=1
     `;
 
@@ -41,8 +41,8 @@ exports.getOrders = async (req, res) => {
     let dataQuery = `
       SELECT dh.don_hang_id, dh.khach_hang_id, dh.ma_don, dh.ngay_dat, dh.trang_thai, dh.dia_chi_giao, dh.tong_tien, 
              kh.ho_ten, kh.email
-      FROM DON_HANG dh
-      INNER JOIN KHACH_HANG kh ON dh.khach_hang_id = kh.khach_hang_id
+      FROM DON_HANG dh WITH (NOLOCK)
+      INNER JOIN KHACH_HANG kh WITH (NOLOCK) ON dh.khach_hang_id = kh.khach_hang_id
       WHERE 1=1
     `;
 
