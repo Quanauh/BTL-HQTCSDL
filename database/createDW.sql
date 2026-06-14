@@ -1,6 +1,6 @@
-﻿-- ==========================================
+﻿
 -- 1. DIM_DIA_CHI (Bảng mới theo xử lý của Backend)
--- ==========================================
+
 CREATE TABLE DIM_DIA_CHI (
     DiaChiKey INT IDENTITY(1,1) PRIMARY KEY,
     Tinh NVARCHAR(100) NOT NULL,
@@ -10,18 +10,18 @@ GO
 
 
 CREATE TABLE DIM_SAN_PHAM (
-    SanPhamKey INT IDENTITY(1,1) PRIMARY KEY, -- Khóa chính tự tăng trong DW
-    SanPhamID INT,                           -- Mã ID sản phẩm gốc từ nguồn
+    SanPhamKey INT IDENTITY(1,1) PRIMARY KEY, 
+    SanPhamID INT,                          
     TenSanPham NVARCHAR(200),
     Gia DECIMAL(18,2),
     ConHang BIT,
         
     -- Thông tin cấu hình chi tiết mới thêm
-    MauSac NVARCHAR(50),                     -- Ví dụ: N'Đen Titan', N'Trắng Bạc'
-    RAM VARCHAR(50),                         -- Ví dụ: '8GB', '16GB' (hoặc dùng INT nếu chỉ lưu số)
-    ROM VARCHAR(50),                         -- Ví dụ: '128GB', '1TB'
+    MauSac NVARCHAR(50),                  
+    RAM VARCHAR(50),           
+    ROM VARCHAR(50),              
         
-    -- Thông tin hãng sản xuất (Gộp từ bảng Hang sang chuẩn Dim)
+    -- Thông tin hãng sản xuất
     HangID INT,              
     TenHang NVARCHAR(100),
     MoTaHang NVARCHAR(500)  
@@ -35,7 +35,7 @@ CREATE TABLE DIM_KHACH_HANG (
     HoTen NVARCHAR(100),
     Email NVARCHAR(100),
     SoDienThoai NVARCHAR(20)
-    -- Đã bỏ trường địa chỉ ở đây vì địa chỉ giờ đi theo từng Đơn hàng (Fact)
+
 );
 GO
 
