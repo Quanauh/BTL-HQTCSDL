@@ -29,7 +29,7 @@ exports.register = async (req, res) => {
       const resTaiKhoan = await requestTaiKhoan
         .input('email', sql.NVarChar, email)
         .input('mat_khau', sql.NVarChar, mat_khau)
-        .input('vai_tro', sql.NVarChar, 'KhachHang')
+        .input('vai_tro', sql.NVarChar, 'customer')
         .query('INSERT INTO TAI_KHOAN (email, mat_khau, vai_tro) OUTPUT Inserted.tai_khoan_id VALUES (@email, @mat_khau, @vai_tro)');
 
       const tai_khoan_id = resTaiKhoan.recordset[0].tai_khoan_id;
@@ -74,7 +74,7 @@ exports.login = async (req, res) => {
           ho_ten: 'Khách hàng Demo',
           so_dien_thoai: '0987654321',
           dia_chi: '123 Đường Demo, Hà Nội',
-          vai_tro: 'KhachHang'
+          vai_tro: 'customer'
         }
       });
     }
